@@ -2,7 +2,27 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const logos = Array(10).fill("/LogoList/l1.png");
+const logos = [
+    "/LogoList/1.png",
+    "/LogoList/2.png",
+    "/LogoList/3.png",
+    "/LogoList/4.png",
+    "/LogoList/5.png",
+    "/LogoList/6.png",
+    "/LogoList/7.png",
+    "/LogoList/8.PNG",
+    "/LogoList/9.png",
+    "/LogoList/10.png",
+    "/LogoList/11.png",
+    "/LogoList/12.png",
+    "/LogoList/13.png",
+    "/LogoList/14.png",
+    "/LogoList/15.png",
+    "/LogoList/16.png",
+    "/LogoList/17.jpg",
+    "/LogoList/18.jpeg",
+    "/LogoList/19.png",
+];
 
 export default function LogoTicker() {
     return (

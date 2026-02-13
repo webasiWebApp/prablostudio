@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, DM_Sans, PT_Serif } from "next/font/google";
+import { Outfit, DM_Sans, PT_Serif, Poppins, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import LayoutContent from "@/components/LayoutContent"; // We will create this below
 
@@ -9,6 +9,16 @@ const ptSerif = PT_Serif({
     weight: ["400", "700"],
     subsets: ["latin"],
     variable: "--font-pt-serif"
+});
+const poppins = Poppins({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700", "800", "900"],
+    variable: "--font-poppins"
+});
+const bebas = Bebas_Neue({
+    subsets: ["latin"],
+    weight: ["400"],
+    variable: "--font-bebas"
 });
 
 export const metadata: Metadata = {
@@ -23,7 +33,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${outfit.variable} ${dmSans.variable} ${ptSerif.variable} font-dm-sans`}>
+            <body className={`${outfit.variable} ${dmSans.variable} ${ptSerif.variable} ${poppins.variable} ${bebas.variable} font-dm-sans`}>
                 {/* We move Navbar, Footer, and Logic into this new component */}
                 <LayoutContent>
                     {children}
