@@ -30,9 +30,9 @@ function Counter({ value }: { value: number }) {
 export default function Hero() {
     const stats = [
         { num: 5, suffix: "+", label: "Years of Experience" },
-        { num: 200, suffix: "+", label: "Projects Completed" },
-        { num: 120, suffix: "K+", label: "Happy Clients" },
-        { num: 20, suffix: "+", label: "Creative Peoples" }
+        { num: 850, suffix: "+", label: "Projects Completed" },
+        { num: 100, suffix: "K+", label: "Happy Clients" },
+        { num: 25, suffix: "+", label: "Team Members" }
     ];
 
     return (

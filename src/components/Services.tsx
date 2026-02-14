@@ -41,20 +41,6 @@ export default function Services() {
         restDelta: 0.001
     });
 
-    // Transform scroll progress to horizontal translation
-    // We want to move left, so we use negative percentage.
-    // The range depends on how many items we have and how many we want clearly visible at end.
-    // We have 4 items, showing 3. We basically need to scroll one item width + gap.
-    // Or simpler: scroll until the last item acts as the end.
-    // Let's refine the range: 0% scroll -> 0% x, 100% scroll -> move left enough to see the 4th item.
-    // If we assume each card is roughly 30-33% width.
-    // Transform scroll progress to horizontal translation
-    // We want to move left, so we use negative percentage.
-    // The range depends on how many items we have and how many we want clearly visible at end.
-    // We have 4 items, showing 3. We basically need to scroll one item width + gap.
-    // Or simpler: scroll until the last item acts as the end.
-    // Let's refine the range: 0% scroll -> 0% x, 100% scroll -> move left enough to see the 4th item.
-    // If we assume each card is roughly 30-33% width.
     const x = useTransform(smoothProgress, [0, 1], ["0%", "-26%"]);
 
     return (
