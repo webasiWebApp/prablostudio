@@ -18,15 +18,15 @@ export default function AgencyInfo() {
         <section className="py-16 md:py-32 px-[5%] bg-white flex flex-col lg:flex-row items-center gap-16 overflow-hidden">
             <div className="flex-1">
                 <h2 className="font-outfit text-3xl md:text-5xl lg:text-7xl font-black text-primary mb-12 uppercase leading-[0.9] tracking-tighter">
-                    Not Your<br />Average<br /> <span className='italic font-medium text-primary mt-1 font-pt-serif'>Agency</span>
+                    Tradition<br />Meets<br /> <span className='italic font-medium text-primary mt-1 font-pt-serif'>Technology</span>
                 </h2>
 
                 {/* List items with focus/gray-out effect */}
                 <div className="flex flex-col gap-10">
                     {[
-                        { id: "01", title: "ARTIFICIAL INTELLIGENCE", desc: "We leverage AI to optimize campaigns." },
-                        { id: "02", title: "IN-HOUSE PRODUCTION", desc: "Full-scale studio capabilities." },
-                        { id: "03", title: "FUTURE-READY", desc: "Stay ahead of the curve." }
+                        { id: "01", title: "ARTIFICIAL INTELLIGENCE", desc: "We leverage data-driven AI insights to optimize every campaign for maximum ROI." },
+                        { id: "02", title: "IN-HOUSE PRODUCTION", desc: "We craft high-end cinematic visuals with our full-scale in-house studio capabilities." },
+                        { id: "03", title: "FUTURE-READY", desc: "We adapt to emerging digital trends to ensure your brand always stays ahead of the curve." }
                     ].map((item) => (
                         <div
                             key={item.id}

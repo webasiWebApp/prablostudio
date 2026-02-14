@@ -17,7 +17,7 @@ export default function Footer() {
                         Step Into The Future Of Marketing With Prablo360.
                     </p>
                     <button className="bg-white text-primary px-10 py-4 rounded-md font-bold text-xs uppercase hover:bg-black hover:text-white transition-all shadow-md">
-                        Experience The Future
+                        GET A FREE QUOTE
                     </button>
                 </div>
             </div>
@@ -37,7 +37,7 @@ export default function Footer() {
                         />
                     </Link>
                     <p className="text-gray-600 text-md max-w-xs leading-relaxed font-medium">
-                        <span className="text-primary">Prablo360</span> Isn't Just An Agency; It's A Digital Ecosystem. We Recognized That Traditional Marketing Is Dead.
+                        <span className="text-primary">Prablo360</span> isn't just an agency; it's a digital ecosystem. We recognized that traditional marketing is dead.
                     </p>
                     {/* Social Icons matching design colors */}
                     <div className="flex gap-4">
@@ -62,7 +62,13 @@ export default function Footer() {
                 <div className="flex flex-col gap-6">
                     <h4 className="text-primary font-bold uppercase  text-2xl">Service</h4>
                     <ul className="space-y-3">
-                        {['Home', 'About', 'Service', 'Portfolio', 'Contact'].map(link => (
+                        {[
+                            'Social Media Management',
+                            'Performance Marketing',
+                            'Web Design & Development',
+                            'Content Creation',
+                            'SEO Strategy'
+                        ].map(link => (
                             <li key={link} className="text-black font-medium text-md cursor-pointer hover:text-primary transition-colors">{link}</li>
                         ))}
                     </ul>
@@ -72,8 +78,12 @@ export default function Footer() {
                 <div className="flex flex-col gap-6">
                     <h4 className="text-primary font-bold uppercase text-2xl">Address</h4>
                     <div className="flex flex-col gap-2 text-md font-medium text-black">
-                        <p>435, 15a Longdon Hill,<br />Colombo 00500</p>
-                        <p>Ph: <span className="underline">+947 77 122 299</span></p>
+                        <p>No 4/A, Samagipura, Dandeniya,<br />Rathmale, Matara</p>
+                        <p>
+                            PH : <br />
+                            <span className="underline">071 36 890 36</span><br />
+                            <span className="underline">071 35 890 35</span>
+                        </p>
                     </div>
                 </div>
 
@@ -82,7 +92,7 @@ export default function Footer() {
             {/* 3. Copyright Bar */}
             <div className="pt-8 border-gray-100 flex justify-center">
                 <p className="text-white bg-primary w-full py-4 text-center rounded-sm font-medium text-xs uppercase">
-                    Copyright © 2026 Prablo 360. All Rights Reserved. <span className="mx-2">|</span> <Link href="https://webasi.co" target="_blank" className="hover:text-black transition-colors">Design by WEBASI</Link>
+                    Copyright © 2026 Prablo360. All Rights Reserved. <span className="mx-2">|</span> Designed & Developed by Prablo360 Team.
                 </p>
             </div>
         </footer>

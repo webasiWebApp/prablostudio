@@ -31,7 +31,7 @@ export default function Hero() {
     const stats = [
         { num: 5, suffix: "+", label: "Years of Experience" },
         { num: 850, suffix: "+", label: "Projects Completed" },
-        { num: 100, suffix: "K+", label: "Happy Clients" },
+        { num: 100, suffix: "+", label: "Happy Clients" }, // User asked for 100+, removing 'K'
         { num: 25, suffix: "+", label: "Team Members" }
     ];
 
@@ -59,12 +59,12 @@ export default function Hero() {
                         OF DIGITAL IMPACT.
                     </h1>
                     <p className="text-white/90 text-xs md:text-lg font-light max-w-3xl mx-auto leading-relaxed mb-10">
-                        Prablo360 Is Sri Lanka's First AI-Powered Digital Agency Fused With A High-End Creative Studio. We
+                        Prablo360 Is Sri Lanka's First <span className="font-bold">AI-Powered</span> Digital Agency Fused With A High-End Creative Studio. We
                         Combine Artificial Intelligence With Cinematic Storytelling To Build Brands That Dominate The
                         Market
                     </p>
                     <button className="bg-white text-primary px-10 py-4 rounded-sm font-bold text-xs uppercase hover:bg-black hover:text-white transition-all shadow-lg">
-                        Experience The Future
+                        View Our Work
                     </button>
                 </div>
             </div>

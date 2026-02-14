@@ -3,25 +3,33 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 
+import { MoveRight } from "lucide-react";
+
+// ... existing imports ...
+
 const expertiseData = [
     {
         id: "01",
-        title: "Paid Advertising",
+        title: "SOCIAL MEDIA MANAGEMENT",
+        desc: "We don't just post; we build communities. From strategic content calendars to daily engagement, we grow your brand’s voice where it matters most.",
         video: "/Service/s1.jpg",
     },
     {
         id: "02",
-        title: "SEO & Content Marketing",
+        title: "PERFORMANCE MARKETING",
+        desc: "Stop guessing, start converting. High-ROI campaigns on Facebook, Instagram, and Google designed to turn viewers into paying customers.",
         video: "/Service/s2.jpg",
     },
     {
         id: "03",
-        title: "Website Design & Optimization",
+        title: "WEB DESIGN & DEVELOPMENT",
+        desc: "More than just aesthetics. We build fast, mobile-responsive, and high-converting websites that serve as your 24/7 digital sales engine.",
         video: "/Service/s3.jpg",
     },
     {
         id: "04",
-        title: "Social Media Management",
+        title: "SEO & CONTENT STRATEGY",
+        desc: "Dominate search results. We optimize your digital presence to rank higher on Google and attract organic traffic that actually stays.",
         video: "/Service/s4.jpg",
     },
 ];
@@ -54,9 +62,16 @@ export default function Services() {
                             OUR EXPERTISE<br />
                             <span className="italic font-medium mt-1 font-pt-serif">IN ACTION</span>
                         </h2>
-                        <p className="text-white/90 text-xs md:text-lg font-light max-w-3xl  leading-relaxed mb-10">
+                        <h3 className="text-white text-xl md:text-2xl font-light mt-4 mb-2">
                             Blending AI Technology With Creative Brilliance.
+                        </h3>
+                        <p className="text-white/90 text-xs md:text-sm font-light max-w-xl leading-relaxed mb-6">
+                            We don't just execute campaigns; we engineer digital dominance. By fusing data-driven AI insights with high-end cinematic storytelling, we turn passive audiences into loyal advocates and transform brands into market leaders.
                         </p>
+                        <div className="flex items-center gap-2 text-white/80">
+                            <div className="h-[1px] w-12 bg-white/50" />
+                            <MoveRight size={20} />
+                        </div>
                     </div>
 
                     {/* Right Side: Horizontal Carousel */}
@@ -69,23 +84,21 @@ export default function Services() {
                                 style={{ x }}
                                 className="flex w-full relative z-10 gap-6"
                             >
-                                {expertiseData.map((item, index) => {
-                                    return (
-                                        <div
-                                            key={item.id}
-                                            className="flex flex-col gap-4 w-[85vw] md:w-[calc((100%-48px)/3)] items-start flex-shrink-0"
-                                        >
-                                            <div className="w-16 h-14 md:w-24 md:h-16 border border-white/40 rounded-[4px] flex items-center justify-center bg-primary z-10 transition-colors duration-300">
-                                                <span className="text-white text-3xl md:text-4xl font-light font-outfit">
-                                                    {item.id}
-                                                </span>
-                                            </div>
-                                            <h3 className="text-white font-bold text-[10px] md:text-xs uppercase max-w-[200px] leading-tight">
-                                                {item.title}
-                                            </h3>
+                                {expertiseData.map((item) => (
+                                    <div
+                                        key={item.id}
+                                        className="flex flex-col gap-4 w-[85vw] md:w-[calc((100%-48px)/3)] items-start flex-shrink-0"
+                                    >
+                                        <div className="w-16 h-14 md:w-24 md:h-16 border border-white/40 rounded-[4px] flex items-center justify-center bg-primary z-10 transition-colors duration-300">
+                                            <span className="text-white text-3xl md:text-4xl font-light font-outfit">
+                                                {item.id}
+                                            </span>
                                         </div>
-                                    );
-                                })}
+                                        <h3 className="text-white font-medium text-[10px] md:text-xs uppercase max-w-[200px] leading-tight">
+                                            {item.title}
+                                        </h3>
+                                    </div>
+                                ))}
                             </motion.div>
                         </div>
 
@@ -97,18 +110,29 @@ export default function Services() {
                             {expertiseData.map((item) => (
                                 <div
                                     key={item.id}
-                                    className="relative w-[85vw] md:w-[calc((100%-48px)/3)] h-full rounded-xs overflow-hidden shadow-2xl bg-black/20 border border-white/10 flex-shrink-0 group"
+                                    className="relative w-[85vw] md:w-[calc((100%-48px)/3)] h-full rounded-xs overflow-hidden shadow-2xl bg-black/20 border border-white/10 flex-shrink-0 group cursor-pointer"
                                 >
                                     <Image
                                         src={item.video}
                                         alt={item.title}
                                         fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                        className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-sm"
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                     />
-                                    <div className="absolute inset-0 bg-black/20 hover:bg-transparent transition-all duration-500" />
-                                    <div className="absolute bottom-6 left-6 z-10">
-                                        <span className="text-white/80 font-black text-4xl uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-4 group-hover:translate-y-0 transform block">{item.id}</span>
+                                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/80 transition-all duration-500" />
+
+                                    {/* Content that appears on hover */}
+                                    <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-4 group-hover:translate-y-0">
+                                        <h3 className="text-white font-bold text-xl md:text-2xl uppercase mb-4 tracking-wider">
+                                            {item.title}
+                                        </h3>
+                                        <p className="text-white/90 text-sm md:text-base font-light leading-relaxed">
+                                            {item.desc}
+                                        </p>
+                                    </div>
+
+                                    <div className="absolute bottom-6 left-6 z-10 group-hover:opacity-0 transition-opacity duration-300">
+                                        <span className="text-white/80 font-black text-4xl uppercase block">{item.id}</span>
                                     </div>
                                 </div>
                             ))}

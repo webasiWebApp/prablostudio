@@ -30,9 +30,9 @@ export default function LogoTicker() {
             <div className="container mx-auto px-4 text-center mb-20">
                 {/* Updated Typography to match image_970eee.png */}
                 <h2 className="font-outfit text-primary text-4xl md:text-6xl font-black uppercase leading-[1] tracking-tighter flex flex-col items-center">
-                    <span>WE'RE A RECOGNIZED</span>
-                    <span>LEADER IN PERFORMANCE</span>
-                    <span className="italic font-medium mt-1 font-pt-serif">MARKETING</span>
+                    <span>TRUSTED BY BRANDS</span>
+                    <span>That Demand</span>
+                    <span className="italic font-medium mt-1 font-pt-serif">Results</span>
                 </h2>
             </div>
 
@@ -41,7 +41,7 @@ export default function LogoTicker() {
                 <div className="flex gap-8 md:gap-16 animate-scroll whitespace-nowrap items-center">
                     {[...logos, ...logos].map((logo, idx) => (
                         <div key={idx} className="flex flex-col items-center group shrink-0">
-                            <div className="relative w-32 h-16 md:w-40 md:h-40 grayscale hover:grayscale-0 transition-all duration-500 cursor-default">
+                            <div className="relative w-32 h-16 md:w-40 md:h-40 grayscale opacity-70 cursor-default">
                                 <Image
                                     src={logo}
                                     alt="Client Logo"

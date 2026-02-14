@@ -5,13 +5,29 @@ import { motion, AnimatePresence } from 'framer-motion';
 const faqs = [
     {
         id: "01",
-        q: "Placeholder Question Goes Here?",
-        a: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Is Simply Dummy Text."
+        q: "What makes Prablo360 different from other agencies?",
+        a: "Unlike traditional agencies, we combine Artificial Intelligence (AI) with Creative Content. We don't just post; we create eye-catching visuals and data-driven strategies that help your brand stand out in a crowded digital space."
     },
-    { id: "02", q: "Placeholder Question Goes Here?", a: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry." },
-    { id: "03", q: "Placeholder Question Goes Here?", a: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry." },
-    { id: "04", q: "Placeholder Question Goes Here?", a: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry." },
-    { id: "05", q: "Placeholder Question Goes Here?", a: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry." },
+    {
+        id: "02",
+        q: "Do you handle Video Production and Content Creation?",
+        a: "Yes! We have our own in-house team for photography and video. Whether it's Social Media Reels, TikToks, or Product Photography, we create high-quality content that engages your audience and drives sales."
+    },
+    {
+        id: "03",
+        q: "How do you measure the success of a campaign?",
+        a: "We focus on results. You will receive monthly reports showing your Reach, Engagement, and Real Growth. We ensure your budget is spent wisely to get the best possible return on investment."
+    },
+    {
+        id: "04",
+        q: "Do you work with small businesses and startups?",
+        a: "Absolutely. We love working with ambitious startups and growing brands. We have flexible packages designed specifically to help new businesses establish a strong online presence from day one."
+    },
+    {
+        id: "05",
+        q: "How do I get started with Prablo360?",
+        a: "It’s simple. Click the \"Hire Us\" button or contact us directly. Let's have a chat about your goals and see how we can help you grow."
+    },
 ];
 
 export default function FAQ() {
@@ -32,7 +48,7 @@ export default function FAQ() {
                         <span className="italic font-medium mt-1 font-pt-serif">QUESTIONS</span>
                     </h2>
                     <p className="text-gray-400 text-sm md:text-base max-w-sm leading-relaxed">
-                        Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Is.
+                        Have questions? We have answers. Everything you need to know about growing your brand with Prablo360.
                     </p>
                 </div>
 
