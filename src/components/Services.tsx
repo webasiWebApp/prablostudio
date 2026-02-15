@@ -62,12 +62,12 @@ export default function Services() {
 
     return (
         <section ref={containerRef} className="relative h-[250vh] bg-primary">
-            <div className="sticky top-0 h-[100dvh] flex flex-col justify-start md:justify-center px-[5%] overflow-hidden pt-20 pb-20 md:pt-0 md:pb-0">
-                <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-24 w-full max-w-[1400px] mx-auto items-center">
+            <div className="sticky top-0 h-[100dvh] flex flex-col justify-start md:justify-center px-[5%] overflow-hidden pt-28 md:pt-0">
+                <div className="grid lg:grid-cols-[1fr_2fr] gap-6 lg:gap-24 w-full max-w-[1400px] mx-auto items-center">
 
                     {/* Left Side: Header */}
                     <div className="flex flex-col gap-2">
-                        <h2 className="text-white text-4xl md:text-5xl lg:text-[80px] font-black leading-[0.85] uppercase">
+                        <h2 className="text-white text-3xl md:text-5xl lg:text-[80px] font-black leading-[0.85] uppercase">
                             OUR EXPERTISE<br />
                             <span className="font-medium mt-1 font-pt-serif">IN ACTION</span>
                         </h2>
@@ -84,26 +84,28 @@ export default function Services() {
                     </div>
 
                     {/* Right Side: Horizontal Carousel */}
-                    <div className="flex flex-col gap-10 overflow-hidden relative">
+                    <div className="flex flex-col gap-6 md:gap-10 overflow-hidden relative">
 
-                        {/* Stepper Header with Horizontal Line - Locked */}
-                        <div className="relative flex items-center mt-12 mb-8">
-                            <div className="absolute top-1/2 left-0 w-full h-[1px] bg-white/20 z-0 -translate-y-1/2" />
+                        {/* Stepper Header with Horizontal Line */}
+                        <div className="relative flex items-center mt-6 md:mt-12 mb-4 md:mb-8">
                             <motion.div
                                 style={{ x }}
                                 className="flex w-full relative z-10 gap-6"
                             >
+                                {/* Moving Horizontal Line */}
+                                <div className="absolute top-7 md:top-8 left-0 w-[350vw] md:w-[150%] h-[1px] bg-white/20 z-0 -translate-y-1/2" />
+
                                 {expertiseData.map((item) => (
                                     <div
                                         key={item.id}
-                                        className="flex flex-col gap-4 w-[85vw] md:w-[calc((100%-48px)/3)] items-start flex-shrink-0"
+                                        className="flex flex-col gap-4 w-[85vw] md:w-[calc((100%-48px)/3)] items-start flex-shrink-0 relative z-10"
                                     >
-                                        <div className="w-16 h-14 md:w-24 md:h-16 border border-white/40 rounded-[4px] flex items-center justify-center bg-primary z-10 transition-colors duration-300">
+                                        <div className="w-16 h-14 md:w-24 md:h-16 border border-white/40 rounded-[4px] flex items-center justify-center bg-primary transition-colors duration-300">
                                             <span className="text-white text-3xl md:text-4xl font-light font-outfit">
                                                 {item.id}
                                             </span>
                                         </div>
-                                        <h3 className="text-white font-medium text-[10px] md:text-xs uppercase max-w-[200px] leading-tight">
+                                        <h3 className="text-white font-thin text-[13px] md:text-xs uppercase max-w-[200px] leading-tight">
                                             {item.title}
                                         </h3>
                                     </div>
@@ -114,7 +116,7 @@ export default function Services() {
                         {/* Carousel Container */}
                         <motion.div
                             style={{ x }}
-                            className="flex gap-6 w-full h-[350px] md:h-[450px]"
+                            className="flex gap-6 w-full h-[280px] md:h-[450px]"
                         >
                             {expertiseData.map((item) => (
                                 <div
