@@ -99,15 +99,21 @@ export default function Navbar() {
                         animate={{ x: 0 }}
                         exit={{ x: '100%' }}
                         transition={{ type: 'tween', duration: 0.4 }}
-                        className="fixed inset-0 z-[200] bg-black flex flex-col p-8"
+                        className="fixed inset-0 z-[200] bg-white flex flex-col p-8"
                     >
                         {/* Mobile Header */}
                         <div className="flex justify-between items-center mb-16">
                             <div className="flex flex-col leading-[0.8]">
-                                <span className="font-outfit font-black text-2xl text-white">PRABLO</span>
-                                <span className="font-outfit font-black text-2xl text-primary">360</span>
+                                <Image
+                                    src="/logo.png"
+                                    alt="PRABLO 360 Logo"
+                                    width={80}
+                                    height={40}
+                                    className="object-contain"
+                                    priority
+                                />
                             </div>
-                            <button onClick={() => setMobileMenuOpen(false)} className="text-white">
+                            <button onClick={() => setMobileMenuOpen(false)} className="text-primary">
                                 <X size={32} />
                             </button>
                         </div>
@@ -119,7 +125,8 @@ export default function Navbar() {
                                     key={item}
                                     href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="text-white text-4xl font-black uppercase hover:text-primary transition-colors"
+                                    // Modified text color to primary as requested
+                                    className="text-primary/90 text-4xl font-black uppercase hover:text-black transition-colors"
                                 >
                                     {item}
                                 </Link>
@@ -128,7 +135,7 @@ export default function Navbar() {
 
                         {/* Mobile Footer Cta */}
                         <div className="mt-auto">
-                            <button className="w-full bg-primary text-white py-5 rounded-sm font-black text-sm uppercase tracking-widest">
+                            <button className="w-full bg-primary text-white py-5 rounded-sm font-black text-sm uppercase tracking-widest hover:bg-black transition-colors">
                                 Hire Us Today
                             </button>
                         </div>

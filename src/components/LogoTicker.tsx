@@ -41,7 +41,7 @@ export default function LogoTicker() {
                 <div className="flex gap-8 md:gap-16 animate-scroll whitespace-nowrap items-center">
                     {[...logos, ...logos].map((logo, idx) => (
                         <div key={idx} className="flex flex-col items-center group shrink-0">
-                            <div className="relative w-32 h-16 md:w-40 md:h-40 grayscale opacity-70 cursor-default">
+                            <div className="relative w-40 h-40 md:w-40 md:h-40 grayscale opacity-70 cursor-default">
                                 <Image
                                     src={logo}
                                     alt="Client Logo"

@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer className="bg-white pt-16  font-inter">
             {/* 1. The Call to Action Card */}
-            <div className="bg-[url('/bg2.png')] bg-cover bg-center bg-no-repeat p-12 md:p-20 rounded-xl text-white text-center mb-20 shadow-lg max-w-[1400px] mx-auto relative overflow-hidden">
+            <div className="bg-[url('/bg2.png')] bg-cover bg-center bg-no-repeat p-12 md:p-20 rounded-xl text-white text-center mb-20 shadow-lg w-[90%] max-w-[1400px] mx-auto relative overflow-hidden">
 
                 <div className="relative z-10">
                     <h2 className="font-outfit text-4xl md:text-7xl font-black mb-4 uppercase leading-none">

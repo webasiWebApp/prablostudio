@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 
 import { MoveRight } from "lucide-react";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 // ... existing imports ...
 
@@ -49,16 +50,24 @@ export default function Services() {
         restDelta: 0.001
     });
 
-    const x = useTransform(smoothProgress, [0, 1], ["0%", "-26%"]);
+    const isMobile = useMediaQuery("(max-width: 768px)");
+
+    // Desktop: -26% (calculated for large screens to show 4 items)
+    // Mobile: Need to scroll much further to show all horizontal items. 
+    // Approx calc: 4 items * 85vw + gaps -> significantly more than 100%. 
+    // Using -260% as a safe estimate for mobile horizontal scroll distance.
+    const xRange = isMobile ? ["0%", "-260%"] : ["0%", "-26%"];
+
+    const x = useTransform(smoothProgress, [0, 1], xRange);
 
     return (
         <section ref={containerRef} className="relative h-[250vh] bg-primary">
-            <div className="sticky top-0 h-screen flex flex-col justify-center px-[5%] overflow-hidden">
+            <div className="sticky top-0 h-[100dvh] flex flex-col justify-start md:justify-center px-[5%] overflow-hidden pt-20 pb-20 md:pt-0 md:pb-0">
                 <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-24 w-full max-w-[1400px] mx-auto items-center">
 
                     {/* Left Side: Header */}
                     <div className="flex flex-col gap-2">
-                        <h2 className="text-white text-3xl md:text-5xl lg:text-[80px] font-black leading-[0.85] uppercase">
+                        <h2 className="text-white text-4xl md:text-5xl lg:text-[80px] font-black leading-[0.85] uppercase">
                             OUR EXPERTISE<br />
                             <span className="font-medium mt-1 font-pt-serif">IN ACTION</span>
                         </h2>

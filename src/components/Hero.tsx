@@ -54,7 +54,7 @@ export default function Hero() {
                     />
                 </div>
                 <div className="z-10 relative flex flex-col items-center max-w-5xl mx-auto pt-20">
-                    <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-poppins tracking-normal font-black leading-tight mb-8">
+                    <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-poppins tracking-normal font-black leading-tight mb-8">
                         BEYOND MARKETING.<br />
                         WE ARE THE <span className="font-pt-serif font-light">FUTURE</span><br />
                         OF DIGITAL IMPACT.
@@ -73,7 +73,7 @@ export default function Hero() {
             </div>
 
             {/* Stats Bar */}
-            <div className="bg-white py-20 px-[5%] flex flex-wrap justify-around items-center border-b border-gray-50">
+            <div className="bg-white pt-20 md:pt-20 md:pb-20 px-[5%] flex flex-wrap justify-around items-center border-b border-gray-50">
                 {stats.map((stat, i) => (
                     <div key={i} className="text-center min-w-[200px] mb-8 lg:mb-0">
                         <span className="block text-6xl font-light text-black mb-2">
