@@ -17,7 +17,7 @@ export default function AboutPage() {
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-white text-5xl md:text-[100px] font-black uppercase leading-[0.85]"
+                        className="text-white text-5xl md:text-[100px] font-normal uppercase leading-[0.85]"
                     >
                         WE ARE THE <br />
                         <span className="font-light opacity-90">REBELS</span> <br />
@@ -29,7 +29,7 @@ export default function AboutPage() {
             {/* Mission Section */}
             <section className="py-24 px-[5%] max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h2 className="text-black text-5xl md:text-7xl font-black uppercase leading-[0.9] mb-8">
+                    <h2 className="text-black text-5xl md:text-7xl font-normal uppercase leading-[0.9] mb-8">
                         Our <span className="text-primary font-light">Mission</span>
                     </h2>
                     <p className="text-gray-600 text-lg md:text-xl font-medium leading-relaxed">

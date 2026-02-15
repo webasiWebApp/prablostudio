@@ -18,28 +18,28 @@ async function getProject(slug: string) {
 export default async function ProjectDetailPage({ params }: { params: { slug: string } }) {
     const project = await getProject(params.slug);
 
-    if (!project) return <div className="p-20 text-center font-black uppercase">Project Impact Not Found</div>;
+    if (!project) return <div className="p-20 text-center font-normal uppercase">Project Impact Not Found</div>;
 
     return (
         <main className="bg-white min-h-screen pt-32 pb-20 px-[5%]">
             <div className="max-w-[1100px] mx-auto">
-                <Link href="/portfolio" className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 hover:text-primary transition-colors mb-16">
+                <Link href="/portfolio" className="flex items-center gap-2 text-[10px] font-normal uppercase tracking-[0.3em] text-gray-400 hover:text-primary transition-colors mb-16">
                     <ArrowLeft size={14} /> Back to Selection
                 </Link>
 
                 <div className="grid lg:grid-cols-2 gap-16 mb-20 items-start">
                     <div>
-                        <h1 className="text-black text-6xl md:text-8xl font-black uppercase leading-[0.85] tracking-tighter mb-8">
+                        <h1 className="text-black text-6xl md:text-8xl font-normal uppercase leading-[0.85] tracking-tighter mb-8">
                             {project.title}
                         </h1>
                         <div className="flex gap-8 border-t border-gray-100 pt-8">
                             <div className="flex flex-col gap-1">
-                                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest flex items-center gap-2"><Tag size={12} /> Category</span>
-                                <span className="text-sm font-black uppercase text-primary">{project.category}</span>
+                                <span className="text-[10px] text-gray-400 font-normal uppercase tracking-widest flex items-center gap-2"><Tag size={12} /> Category</span>
+                                <span className="text-sm font-normal uppercase text-primary">{project.category}</span>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest flex items-center gap-2"><Calendar size={12} /> Year</span>
-                                <span className="text-sm font-black uppercase text-black">{project.year}</span>
+                                <span className="text-[10px] text-gray-400 font-normal uppercase tracking-widest flex items-center gap-2"><Calendar size={12} /> Year</span>
+                                <span className="text-sm font-normal uppercase text-black">{project.year}</span>
                             </div>
                         </div>
                     </div>

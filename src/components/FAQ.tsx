@@ -67,7 +67,7 @@ export default function FAQ() {
                                 <span className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white text-[10px] font-light shrink-0">
                                     {faq.id}
                                 </span>
-                                <span className="font-bold text-md md:text-base text-gray-800 flex-1">
+                                <span className="font-normal text-md md:text-base text-gray-800 flex-1">
                                     {faq.q}
                                 </span>
                             </button>

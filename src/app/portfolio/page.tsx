@@ -42,10 +42,10 @@ export default function PortfolioPage() {
             <section className="relative h-[60vh] flex items-center justify-center bg-primary overflow-hidden">
                 <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('/hero-bg.jpg')" }} />
                 <div className="relative z-10 text-center px-[5%]">
-                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="inline-block px-4 py-1 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6">
+                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="inline-block px-4 py-1 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-white text-[10px] font-normal uppercase tracking-[0.3em] mb-6">
                         Showcasing Excellence
                     </motion.div>
-                    <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-white text-6xl md:text-[110px] font-black uppercase leading-[0.8]">
+                    <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-white text-6xl md:text-[110px] font-normal uppercase leading-[0.8]">
                         SELECTED <br />
                         <span className="font-light text-white/90">PROJECT.</span>
                     </motion.h1>
@@ -60,14 +60,14 @@ export default function PortfolioPage() {
                             <button
                                 key={cat}
                                 onClick={() => setFilter(cat)}
-                                className={`px-8 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest transition-all duration-300 ${filter === cat ? "bg-primary text-white shadow-xl shadow-orange-200" : "bg-gray-50 text-gray-400 hover:text-black border border-gray-100"
+                                className={`px-8 py-2.5 rounded-full text-[10px] font-normal uppercase tracking-widest transition-all duration-300 ${filter === cat ? "bg-primary text-white shadow-xl shadow-orange-200" : "bg-gray-50 text-gray-400 hover:text-black border border-gray-100"
                                     }`}
                             >
                                 {cat}
                             </button>
                         ))}
                     </div>
-                    <div className="text-[11px] font-bold text-gray-400 uppercase tracking-widest">
+                    <div className="text-[11px] font-normal text-gray-400 uppercase tracking-widest">
                         Showing <span className="text-primary">{filteredProjects.length}</span> Masterpieces
                     </div>
                 </div>
@@ -76,7 +76,7 @@ export default function PortfolioPage() {
             {/* Masonry Grid */}
             <section className="py-20 px-[5%] max-w-[1400px] mx-auto">
                 {loading ? (
-                    <div className="flex justify-center items-center h-64 text-primary font-black animate-pulse uppercase tracking-widest">Loading Impact...</div>
+                    <div className="flex justify-center items-center h-64 text-primary font-normal animate-pulse uppercase tracking-widest">Loading Impact...</div>
                 ) : (
                     <motion.div layout className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
                         <AnimatePresence mode='popLayout'>
@@ -115,11 +115,11 @@ function ProjectCard({ project }: { project: any }) {
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
                     <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                        <span className="text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-3 block">
+                        <span className="text-primary text-[10px] font-normal uppercase tracking-[0.3em] mb-3 block">
                             {project.category}
                         </span>
                         <div className="flex justify-between items-end">
-                            <h3 className="text-white text-3xl font-black uppercase leading-none">
+                            <h3 className="text-white text-3xl font-normal uppercase leading-none">
                                 {project.title}
                             </h3>
                             <div className="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-2xl">

@@ -41,7 +41,7 @@ export default function Testimonials() {
 
             {/* 2. Reduced header margin from mb-16 to mb-8 */}
             <div className="text-center mb-8 px-4">
-                <h2 className="text-white text-5xl md:text-6xl font-black uppercase leading-none mb-2">
+                <h2 className="text-white text-5xl md:text-6xl font-normal uppercase leading-none mb-2">
                     CLIENT SUCCESS <span className="font-medium mt-1 font-pt-serif">STORIES</span>
                 </h2>
                 <p className="text-white/90 text-xs md:text-lg font-light max-w-3xl mx-auto leading-relaxed mb-10">
@@ -83,11 +83,11 @@ function TestimonialCard({ item }: { item: any }) {
                 "{item.quote}"
             </p>
             <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center font-bold text-primary text-xs">
+                <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center font-normal text-primary text-xs">
                     {item.name[0]}
                 </div>
                 <div className="flex flex-col">
-                    <span className="font-bold text-sm text-black">{item.name}</span>
+                    <span className="font-normal text-sm text-black">{item.name}</span>
                     <span className="text-[9px] text-gray-400 uppercase font-light">{item.location}</span>
                 </div>
             </div>

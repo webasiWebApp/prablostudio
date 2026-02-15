@@ -67,7 +67,7 @@ export default function Services() {
 
                     {/* Left Side: Header */}
                     <div className="flex flex-col gap-2">
-                        <h2 className="text-white text-5xl md:text-5xl lg:text-[80px] font-black leading-[0.85] uppercase">
+                        <h2 className="text-white text-5xl md:text-5xl lg:text-[80px] font-normal leading-[0.85] uppercase">
                             OUR EXPERTISE<br />
                             <span className="font-medium mt-1 font-pt-serif">IN ACTION</span>
                         </h2>
@@ -134,7 +134,7 @@ export default function Services() {
 
                                     {/* Content that appears on hover */}
                                     <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-4 group-hover:translate-y-0">
-                                        <h3 className="text-white font-bold text-xl md:text-2xl uppercase mb-4 tracking-wider">
+                                        <h3 className="text-white font-normal text-xl md:text-2xl uppercase mb-4 tracking-wider">
                                             {item.title}
                                         </h3>
                                         <p className="text-white/90 text-sm md:text-base font-light leading-relaxed">
@@ -143,7 +143,7 @@ export default function Services() {
                                     </div>
 
                                     <div className="absolute bottom-6 left-6 z-10 group-hover:opacity-0 transition-opacity duration-300">
-                                        <span className="text-white/80 font-black text-4xl uppercase block">{item.id}</span>
+                                        <span className="text-white/80 font-normal text-4xl uppercase block">{item.id}</span>
                                     </div>
                                 </div>
                             ))}

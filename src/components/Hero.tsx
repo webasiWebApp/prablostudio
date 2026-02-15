@@ -60,12 +60,12 @@ export default function Hero() {
                         OF DIGITAL IMPACT.
                     </h1>
                     <p className="text-white/90 text-xs md:text-lg font-light max-w-3xl mx-auto leading-relaxed mb-10">
-                        Prablo360 Is Sri Lanka's First <span className="font-bold">AI-Powered</span> Digital Agency Fused With A High-End Creative Studio. We
+                        Prablo360 Is Sri Lanka's First <span className="font-normal">AI-Powered</span> Digital Agency Fused With A High-End Creative Studio. We
                         Combine Artificial Intelligence With Cinematic Storytelling To Build Brands That Dominate The
                         Market
                     </p>
                     <Link href="/portfolio">
-                        <button className="bg-white text-primary px-10 py-4 rounded-sm font-bold text-xs uppercase hover:bg-black hover:text-white transition-all shadow-lg">
+                        <button className="bg-white text-primary px-10 py-4 rounded-sm font-normal text-xs uppercase hover:bg-black hover:text-white transition-all shadow-lg">
                             View Our Work
                         </button>
                     </Link>

@@ -22,7 +22,7 @@ export default function Team() {
         <section className="py-24 px-[5%] bg-white">
             <div className="max-w-[1400px] mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-black text-5xl md:text-7xl font-black uppercase leading-[0.85] mb-6">
+                    <h2 className="text-black text-5xl md:text-7xl font-normal uppercase leading-[0.85] mb-6">
                         MEET THE <br />
                         <span className="text-primary font-light">MINDS.</span>
                     </h2>
@@ -43,7 +43,7 @@ export default function Team() {
                         >
                             {/* Image Placeholder */}
                             <div className="relative w-full aspect-[3/4] bg-gray-100 rounded-2xl overflow-hidden mb-6 border border-gray-100 group-hover:shadow-xl transition-all duration-500">
-                                <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400 font-bold uppercase tracking-widest">
+                                <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400 font-normal uppercase tracking-widest">
                                     Photo Pending
                                 </div>
 
@@ -51,10 +51,10 @@ export default function Team() {
 
                             {/* Info */}
                             <div className="text-center group-hover:-translate-y-2 transition-transform duration-300">
-                                <h3 className="text-black text-xl font-black uppercase leading-tight mb-1">
+                                <h3 className="text-black text-xl font-normal uppercase leading-tight mb-1">
                                     {member.name}
                                 </h3>
-                                <p className="text-primary text-xs font-bold uppercase tracking-widest">
+                                <p className="text-primary text-xs font-normal uppercase tracking-widest">
                                     {member.role}
                                 </p>
                             </div>

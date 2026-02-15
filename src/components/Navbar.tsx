@@ -49,7 +49,7 @@ export default function Navbar() {
                 </Link>
 
                 {/* 2. Desktop Navigation */}
-                <div className={`hidden md:flex gap-10 font-bold text-[12px] uppercase tracking-[0.2em] transition-colors ${isWhiteNav ? "text-black/80" : "text-white/90"
+                <div className={`hidden md:flex gap-10 font-normal text-[12px] uppercase tracking-[0.2em] transition-colors ${isWhiteNav ? "text-black/80" : "text-white/90"
                     }`}>
                     {['Home', 'About', 'Services', 'Portfolio', 'Contact'].map((item) => {
                         const href = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
@@ -71,7 +71,7 @@ export default function Navbar() {
                 {/* 3. Action Button & Mobile Toggle */}
                 <div className="flex items-center gap-4">
                     <Link href="/contact">
-                        <button className={`hidden md:block px-8 py-2 rounded-sm font-black text-primary text-[10px] uppercase tracking-widest hover:bg-black transition-all shadow-lg active:scale-95 ${isWhiteNav ? "bg-primary text-white" : "bg-white text-black"}`}>
+                        <button className={`hidden md:block px-8 py-2 rounded-sm font-normal text-primary text-[10px] uppercase tracking-widest hover:bg-black transition-all shadow-lg active:scale-95 ${isWhiteNav ? "bg-primary text-white" : "bg-white text-black"}`}>
                             Hire Us
                         </button>
                     </Link>
@@ -126,7 +126,7 @@ export default function Navbar() {
                                     href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                                     onClick={() => setMobileMenuOpen(false)}
                                     // Modified text color to primary as requested
-                                    className="text-primary/90 text-4xl font-black uppercase hover:text-black transition-colors"
+                                    className="text-primary/90 text-4xl font-normal uppercase hover:text-black transition-colors"
                                 >
                                     {item}
                                 </Link>
@@ -135,7 +135,7 @@ export default function Navbar() {
 
                         {/* Mobile Footer Cta */}
                         <div className="mt-auto">
-                            <button className="w-full bg-primary text-white py-5 rounded-sm font-black text-sm uppercase tracking-widest hover:bg-black transition-colors">
+                            <button className="w-full bg-primary text-white py-5 rounded-sm font-normal text-sm uppercase tracking-widest hover:bg-black transition-colors">
                                 Hire Us Today
                             </button>
                         </div>

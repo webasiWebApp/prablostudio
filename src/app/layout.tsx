@@ -24,6 +24,9 @@ const bebas = Bebas_Neue({
 export const metadata: Metadata = {
     title: "Prablo Studio | Beyond Marketing",
     description: "We are the future of digital impact.",
+    icons: {
+        icon: "/logo.ico",
+    },
 };
 
 export default function RootLayout({

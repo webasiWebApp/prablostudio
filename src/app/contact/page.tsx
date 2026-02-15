@@ -50,7 +50,7 @@ export default function ContactPage() {
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-white text-6xl md:text-[110px] font-black uppercase leading-[0.8]"
+                        className="text-white text-6xl md:text-[110px] font-normal uppercase leading-[0.8]"
                     >
                         LET'S START <br />
                         <span className="font-light text-white/90">A PROJECT.</span>
@@ -64,7 +64,7 @@ export default function ContactPage() {
 
                     {/* Left Side: Contact Info & Address */}
                     <div className="flex flex-col justify-center">
-                        <h2 className="text-black text-5xl font-black uppercase mb-8 leading-none">
+                        <h2 className="text-black text-5xl font-normal uppercase mb-8 leading-none">
                             OFFICE IN <br />
                             <span className="text-primary font-light">COLOMBO.</span>
                         </h2>
@@ -128,7 +128,7 @@ export default function ContactPage() {
                                 onChange={handleChange}
                             />
                             <div className="flex flex-col gap-2">
-                                <label className="text-[10px] font-black uppercase tracking-widest text-primary ml-1">Message</label>
+                                <label className="text-[10px] font-normal uppercase tracking-widest text-primary ml-1">Message</label>
                                 <textarea
                                     name="message"
                                     value={formData.message}
@@ -142,7 +142,7 @@ export default function ContactPage() {
                             <button
                                 type="submit"
                                 disabled={status === 'loading'}
-                                className="bg-primary text-white py-5 rounded-xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-black transition-all shadow-xl mt-4 disabled:opacity-70 disabled:cursor-not-allowed"
+                                className="bg-primary text-white py-5 rounded-xl font-normal text-xs uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-black transition-all shadow-xl mt-4 disabled:opacity-70 disabled:cursor-not-allowed"
                             >
                                 {status === 'loading' ? (
                                     <>Sending... <Loader2 size={14} className="animate-spin" /></>
@@ -152,12 +152,12 @@ export default function ContactPage() {
                             </button>
 
                             {status === 'success' && (
-                                <p className="text-green-600 text-xs font-bold text-center mt-2 uppercase tracking-wide">
+                                <p className="text-green-600 text-xs font-normal text-center mt-2 uppercase tracking-wide">
                                     Message Sent Successfully!
                                 </p>
                             )}
                             {status === 'error' && (
-                                <p className="text-red-600 text-xs font-bold text-center mt-2 uppercase tracking-wide">
+                                <p className="text-red-600 text-xs font-normal text-center mt-2 uppercase tracking-wide">
                                     Something went wrong. Please try again.
                                 </p>
                             )}
@@ -177,8 +177,8 @@ function ContactDetail({ icon, title, content }: { icon: any, title: string, con
                 {icon}
             </div>
             <div>
-                <h4 className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-1">{title}</h4>
-                <p className="text-black font-bold text-lg">{content}</p>
+                <h4 className="text-[10px] font-normal uppercase tracking-widest text-gray-400 mb-1">{title}</h4>
+                <p className="text-black font-normal text-lg">{content}</p>
             </div>
         </div>
     );
@@ -187,7 +187,7 @@ function ContactDetail({ icon, title, content }: { icon: any, title: string, con
 function InputField({ label, placeholder, name, value, onChange }: { label: string, placeholder: string, name: string, value: string, onChange: (e: React.ChangeEvent<HTMLInputElement>) => void }) {
     return (
         <div className="flex flex-col gap-2">
-            <label className="text-[10px] font-black uppercase tracking-widest text-primary ml-1">{label}</label>
+            <label className="text-[10px] font-normal uppercase tracking-widest text-primary ml-1">{label}</label>
             <input
                 type="text"
                 name={name}

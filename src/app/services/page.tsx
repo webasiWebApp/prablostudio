@@ -57,7 +57,7 @@ export default function ServicesPage() {
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-white text-5xl md:text-[90px] font-black uppercase leading-[0.85]"
+                        className="text-white text-5xl md:text-[90px] font-normal uppercase leading-[0.85]"
                     >
                         OUR <span className="font-light">CORE</span> <br />
                         EXPERTISE.
@@ -92,7 +92,7 @@ export default function ServicesPage() {
                             </div>
 
                             <div className="mt-12">
-                                <h3 className="text-3xl md:text-4xl font-black uppercase leading-none mb-6">
+                                <h3 className="text-3xl md:text-4xl font-normal uppercase leading-none mb-6">
                                     {s.title}
                                 </h3>
                                 <p className={`text-sm md:text-base font-medium leading-relaxed ${s.color.includes('primary') ? 'text-white/80' : 'text-gray-500'
@@ -111,7 +111,7 @@ export default function ServicesPage() {
                 <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[120px] -mb-32 -mr-32" />
 
                 <div className="max-w-[1400px] mx-auto relative z-10">
-                    <h2 className="text-black text-5xl md:text-8xl font-black uppercase mb-20 leading-[0.85]">
+                    <h2 className="text-black text-5xl md:text-8xl font-normal uppercase mb-20 leading-[0.85]">
                         HOW WE <br />
                         <span className="text-primary font-light">ENGINEER IMPACT.</span>
                     </h2>
@@ -120,13 +120,13 @@ export default function ServicesPage() {
                         {steps.map((step) => (
                             <div key={step.id} className="flex flex-col gap-8 group">
                                 <div className="flex items-center gap-4">
-                                    <span className="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white font-black text-lg shadow-xl group-hover:scale-110 transition-transform">
+                                    <span className="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white font-normal text-lg shadow-xl group-hover:scale-110 transition-transform">
                                         {step.id}
                                     </span>
                                     <div className="h-[1px] flex-1 bg-gray-200 hidden lg:block" />
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-bold uppercase mb-4 text-black tracking-tight">{step.name}</h4>
+                                    <h4 className="text-xl font-normal uppercase mb-4 text-black tracking-tight">{step.name}</h4>
                                     <p className="text-gray-500 text-sm md:text-base leading-relaxed font-medium">{step.desc}</p>
                                 </div>
                             </div>
@@ -137,10 +137,10 @@ export default function ServicesPage() {
 
             {/* 4. Mini CTA for Services */}
             <section className="py-24 px-[5%] text-center bg-white">
-                <h3 className="text-4xl md:text-6xl font-black uppercase mb-8">
+                <h3 className="text-4xl md:text-6xl font-normal uppercase mb-8">
                     READY TO <span className="text-primary">DOMINATE?</span>
                 </h3>
-                <button className="bg-primary text-white px-12 py-5 rounded-md font-black text-xs uppercase tracking-widest hover:bg-black transition-all shadow-2xl">
+                <button className="bg-primary text-white px-12 py-5 rounded-md font-normal text-xs uppercase tracking-widest hover:bg-black transition-all shadow-2xl">
                     Start Your Journey
                 </button>
             </section>

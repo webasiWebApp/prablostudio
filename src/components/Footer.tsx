@@ -10,13 +10,13 @@ export default function Footer() {
             <div className="bg-[url('/bg2.png')] bg-cover bg-center bg-no-repeat p-12 md:p-20 rounded-xl text-white text-center mb-20 shadow-lg w-[90%] max-w-[1400px] mx-auto relative overflow-hidden">
 
                 <div className="relative z-10">
-                    <h2 className="font-outfit text-4xl md:text-7xl font-black mb-4 uppercase leading-none">
+                    <h2 className="font-outfit text-4xl md:text-7xl font-normal mb-4 uppercase leading-none">
                         READY TO UPGRADE <br /> YOUR <span className="font-medium mt-1 font-pt-serif">BRAND?</span>
                     </h2>
                     <p className="mb-8 text-sm md:text-base opacity-90 font-medium">
                         Step Into The Future Of Marketing With Prablo360.
                     </p>
-                    <button className="bg-white text-primary px-10 py-4 rounded-md font-bold text-xs uppercase hover:bg-black hover:text-white transition-all shadow-md">
+                    <button className="bg-white text-primary px-10 py-4 rounded-md font-normal text-xs uppercase hover:bg-black hover:text-white transition-all shadow-md">
                         GET A FREE QUOTE
                     </button>
                 </div>
@@ -50,7 +50,7 @@ export default function Footer() {
 
                 {/* Company Links */}
                 <div className="flex flex-col gap-6">
-                    <h4 className="text-primary font-bold uppercase text-2xl">Company</h4>
+                    <h4 className="text-primary font-normal uppercase text-2xl">Company</h4>
                     <ul className="space-y-3">
                         {['Home', 'About', 'Service', 'Portfolio', 'Contact'].map(link => (
                             <li key={link} className="text-black font-medium text-md cursor-pointer hover:text-primary transition-colors">{link}</li>
@@ -60,7 +60,7 @@ export default function Footer() {
 
                 {/* Service Links */}
                 <div className="flex flex-col gap-6">
-                    <h4 className="text-primary font-bold uppercase  text-2xl">Service</h4>
+                    <h4 className="text-primary font-normal uppercase  text-2xl">Service</h4>
                     <ul className="space-y-3">
                         {[
                             'Social Media Management',
@@ -76,7 +76,7 @@ export default function Footer() {
 
                 {/* Address Info */}
                 <div className="flex flex-col gap-6">
-                    <h4 className="text-primary font-bold uppercase text-2xl">Address</h4>
+                    <h4 className="text-primary font-normal uppercase text-2xl">Address</h4>
                     <div className="flex flex-col gap-2 text-md font-medium text-black">
                         <p>No 4/A, Samagipura, Dandeniya,<br />Rathmale, Matara</p>
                         <p>
