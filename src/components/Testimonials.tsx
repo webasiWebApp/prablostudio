@@ -41,7 +41,7 @@ export default function Testimonials() {
 
             {/* 2. Reduced header margin from mb-16 to mb-8 */}
             <div className="text-center mb-8 px-4">
-                <h2 className="text-white text-4xl md:text-6xl font-black uppercase leading-none mb-2">
+                <h2 className="text-white text-5xl md:text-6xl font-black uppercase leading-none mb-2">
                     CLIENT SUCCESS <span className="font-medium mt-1 font-pt-serif">STORIES</span>
                 </h2>
                 <p className="text-white/90 text-xs md:text-lg font-light max-w-3xl mx-auto leading-relaxed mb-10">
