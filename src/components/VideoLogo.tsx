@@ -26,7 +26,7 @@ export default function VideoLogo({ logoSrc, videoSrc, alt }: VideoLogoProps) {
 
     return (
         <div
-            className="relative w-[400px] h-[50vh] flex items-center justify-center cursor-pointer"
+            className="relative w-[250px] h-[200px] md:w-[400px] md:h-[50vh] flex items-center justify-center cursor-pointer"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

@@ -11,7 +11,7 @@ export default function Footer() {
 
                 <div className="relative z-10">
                     <h2 className="font-outfit text-4xl md:text-7xl font-black mb-4 uppercase leading-none">
-                        READY TO UPGRADE <br /> YOUR <span className="italic font-medium mt-1 font-pt-serif">BRAND?</span>
+                        READY TO UPGRADE <br /> YOUR <span className="font-medium mt-1 font-pt-serif">BRAND?</span>
                     </h2>
                     <p className="mb-8 text-sm md:text-base opacity-90 font-medium">
                         Step Into The Future Of Marketing With Prablo360.

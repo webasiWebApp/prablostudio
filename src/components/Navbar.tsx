@@ -74,7 +74,7 @@ export default function Navbar() {
                         <button className={`hidden md:block px-8 py-2 rounded-sm font-black text-primary text-[10px] uppercase tracking-widest hover:bg-black transition-all shadow-lg active:scale-95 ${isWhiteNav ? "bg-primary text-white" : "bg-white text-black"}`}>
                             Hire Us
                         </button>
-                    </Link> 
+                    </Link>
 
                     <button
                         className={`md:hidden p-2 transition-colors ${isWhiteNav ? "text-black" : "text-white"}`}
@@ -119,7 +119,7 @@ export default function Navbar() {
                                     key={item}
                                     href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="text-white text-4xl font-black uppercase italic hover:text-primary transition-colors"
+                                    className="text-white text-4xl font-black uppercase hover:text-primary transition-colors"
                                 >
                                     {item}
                                 </Link>

@@ -59,7 +59,7 @@ export default function ServicesPage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-white text-5xl md:text-[90px] font-black uppercase leading-[0.85]"
                     >
-                        OUR <span className="italic font-light">CORE</span> <br />
+                        OUR <span className="font-light">CORE</span> <br />
                         EXPERTISE.
                     </motion.h1>
                     <p className="text-white/80 mt-8 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
@@ -113,7 +113,7 @@ export default function ServicesPage() {
                 <div className="max-w-[1400px] mx-auto relative z-10">
                     <h2 className="text-black text-5xl md:text-8xl font-black uppercase mb-20 leading-[0.85]">
                         HOW WE <br />
-                        <span className="text-primary italic font-light">ENGINEER IMPACT.</span>
+                        <span className="text-primary font-light">ENGINEER IMPACT.</span>
                     </h2>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">

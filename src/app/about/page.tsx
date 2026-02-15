@@ -20,7 +20,7 @@ export default function AboutPage() {
                         className="text-white text-5xl md:text-[100px] font-black uppercase leading-[0.85]"
                     >
                         WE ARE THE <br />
-                        <span className="italic font-light opacity-90">REBELS</span> <br />
+                        <span className="font-light opacity-90">REBELS</span> <br />
                         OF MARKETING.
                     </motion.h1>
                 </div>
@@ -30,7 +30,7 @@ export default function AboutPage() {
             <section className="py-24 px-[5%] max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <h2 className="text-black text-5xl md:text-7xl font-black uppercase leading-[0.9] mb-8">
-                        Our <span className="text-primary italic font-light">Mission</span>
+                        Our <span className="text-primary font-light">Mission</span>
                     </h2>
                     <p className="text-gray-600 text-lg md:text-xl font-medium leading-relaxed">
                         At Prablo 360, we don't follow digital trends; we engineer them. Our mission is to transform traditional businesses into digital powerhouses through cinematic storytelling and AI precision.
@@ -44,7 +44,7 @@ export default function AboutPage() {
                             fill
                             className="object-cover transition-transform duration-700 group-hover:scale-110"
                         />
-                        
+
                     </div>
                     <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg group translate-y-12">
                         <Image
@@ -53,7 +53,7 @@ export default function AboutPage() {
                             fill
                             className="object-cover transition-transform duration-700 group-hover:scale-110"
                         />
-                        
+
                     </div>
                 </div>
             </section>

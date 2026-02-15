@@ -45,7 +45,7 @@ export default function AboutValues() {
                     <div className="lg:sticky lg:top-32">
                         <h2 className="font-outfit text-5xl md:text-8xl font-black text-black uppercase leading-[0.85] mb-8">
                             THE PILLARS <br />
-                            <span className="italic font-light text-primary">OF PRABLO.</span>
+                            <span className="font-light text-primary">OF PRABLO.</span>
                         </h2>
                         <p className="text-gray-600 text-lg font-medium max-w-md leading-relaxed">
                             We operate at the intersection of logic and magic, ensuring every digital touchpoint is engineered for maximum conversion.

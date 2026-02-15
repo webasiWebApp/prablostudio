@@ -32,7 +32,7 @@ export default function LogoTicker() {
                 <h2 className="font-outfit text-primary text-4xl md:text-6xl font-black uppercase leading-[1] flex flex-col items-center">
                     <span>TRUSTED BY BRANDS</span>
                     <span>That Demand</span>
-                    <span className="italic font-medium mt-1 font-pt-serif">Results</span>
+                    <span className="font-medium mt-1 font-pt-serif">Results</span>
                 </h2>
             </div>
 

@@ -60,7 +60,7 @@ export default function Services() {
                     <div className="flex flex-col gap-2">
                         <h2 className="text-white text-3xl md:text-5xl lg:text-[80px] font-black leading-[0.85] uppercase">
                             OUR EXPERTISE<br />
-                            <span className="italic font-medium mt-1 font-pt-serif">IN ACTION</span>
+                            <span className="font-medium mt-1 font-pt-serif">IN ACTION</span>
                         </h2>
                         <h3 className="text-white text-xl md:text-2xl font-light mt-4 mb-2">
                             Blending AI Technology With Creative Brilliance.

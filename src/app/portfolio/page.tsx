@@ -47,7 +47,7 @@ export default function PortfolioPage() {
                     </motion.div>
                     <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-white text-6xl md:text-[110px] font-black uppercase leading-[0.8]">
                         SELECTED <br />
-                        <span className="italic font-light text-white/90">PROJECT.</span>
+                        <span className="font-light text-white/90">PROJECT.</span>
                     </motion.h1>
                 </div>
             </section>

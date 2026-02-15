@@ -24,7 +24,7 @@ export default function Team() {
                 <div className="text-center mb-16">
                     <h2 className="text-black text-5xl md:text-7xl font-black uppercase leading-[0.85] mb-6">
                         MEET THE <br />
-                        <span className="text-primary italic font-light">MINDS.</span>
+                        <span className="text-primary font-light">MINDS.</span>
                     </h2>
                     <p className="text-gray-500 text-lg font-medium max-w-2xl mx-auto">
                         A collective of visionaries, creators, and strategists dedicated to redefining your digital presence.
@@ -46,7 +46,7 @@ export default function Team() {
                                 <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400 font-bold uppercase tracking-widest">
                                     Photo Pending
                                 </div>
-                                
+
                             </div>
 
                             {/* Info */}

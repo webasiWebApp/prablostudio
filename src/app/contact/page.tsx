@@ -53,7 +53,7 @@ export default function ContactPage() {
                         className="text-white text-6xl md:text-[110px] font-black uppercase leading-[0.8]"
                     >
                         LET'S START <br />
-                        <span className="italic font-light text-white/90">A PROJECT.</span>
+                        <span className="font-light text-white/90">A PROJECT.</span>
                     </motion.h1>
                 </div>
             </section>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                     <div className="flex flex-col justify-center">
                         <h2 className="text-black text-5xl font-black uppercase mb-8 leading-none">
                             OFFICE IN <br />
-                            <span className="text-primary italic font-light">COLOMBO.</span>
+                            <span className="text-primary font-light">COLOMBO.</span>
                         </h2>
 
                         <div className="space-y-10 mt-8">
