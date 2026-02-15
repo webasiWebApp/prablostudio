@@ -45,7 +45,7 @@ export default function PortfolioPage() {
                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="inline-block px-4 py-1 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6">
                         Showcasing Excellence
                     </motion.div>
-                    <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-white text-6xl md:text-[110px] font-black uppercase leading-[0.8] tracking-tighter">
+                    <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-white text-6xl md:text-[110px] font-black uppercase leading-[0.8]">
                         SELECTED <br />
                         <span className="italic font-light text-white/90">PROJECT.</span>
                     </motion.h1>
@@ -119,7 +119,7 @@ function ProjectCard({ project }: { project: any }) {
                             {project.category}
                         </span>
                         <div className="flex justify-between items-end">
-                            <h3 className="text-white text-3xl font-black uppercase tracking-tighter leading-none">
+                            <h3 className="text-white text-3xl font-black uppercase leading-none">
                                 {project.title}
                             </h3>
                             <div className="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-2xl">

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import AboutValues from "../../components/AboutValues"; // The masonry section we built
+import Team from "../../components/Team"; // Team section
 
 export default function AboutPage() {
     return (
@@ -15,7 +16,7 @@ export default function AboutPage() {
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-white text-5xl md:text-[100px] font-black uppercase leading-[0.85] tracking-tighter"
+                        className="text-white text-5xl md:text-[100px] font-black uppercase leading-[0.85]"
                     >
                         WE ARE THE <br />
                         <span className="italic font-light opacity-90">REBELS</span> <br />
@@ -43,6 +44,9 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Team Section */}
+            <Team />
 
             {/* Replaced CTA with the Masonry Pillars section */}
             <AboutValues />

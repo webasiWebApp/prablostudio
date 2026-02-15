@@ -15,7 +15,7 @@ export default function ContactPage() {
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-white text-6xl md:text-[110px] font-black uppercase leading-[0.8] tracking-tighter"
+                        className="text-white text-6xl md:text-[110px] font-black uppercase leading-[0.8]"
                     >
                         LET'S START <br />
                         <span className="italic font-light text-white/90">A PROJECT.</span>
@@ -29,7 +29,7 @@ export default function ContactPage() {
 
                     {/* Left Side: Contact Info & Address */}
                     <div className="flex flex-col justify-center">
-                        <h2 className="text-black text-5xl font-black uppercase tracking-tighter mb-8 leading-none">
+                        <h2 className="text-black text-5xl font-black uppercase mb-8 leading-none">
                             OFFICE IN <br />
                             <span className="text-primary italic font-light">COLOMBO.</span>
                         </h2>
@@ -38,17 +38,17 @@ export default function ContactPage() {
                             <ContactDetail
                                 icon={<MapPin className="text-primary" />}
                                 title="Visit Us"
-                                content="435, 15a Longdon Hill, Colombo 00500"
+                                content="No 4/A, Samagipura, Dandeniya, Rathmale, Matara"
                             />
                             <ContactDetail
                                 icon={<Phone className="text-primary" />}
                                 title="Call Us"
-                                content="+94 77 712 2299"
+                                content="071 36 890 36 / 071 35 890 35"
                             />
                             <ContactDetail
                                 icon={<Mail className="text-primary" />}
                                 title="Email Us"
-                                content="hello@prablo360.lk"
+                                content="prablo360@gmail.com"
                             />
                         </div>
 

@@ -17,7 +17,7 @@ export default function AgencyInfo() {
     return (
         <section className="py-16 md:py-32 px-[5%] bg-white flex flex-col lg:flex-row items-center gap-16 overflow-hidden">
             <div className="flex-1">
-                <h2 className="font-outfit text-3xl md:text-5xl lg:text-7xl font-black text-primary mb-12 uppercase leading-[0.9] tracking-tighter">
+                <h2 className="font-outfit text-3xl md:text-5xl lg:text-7xl font-black text-primary mb-12 uppercase leading-[0.9]">
                     Tradition<br />Meets<br /> <span className='italic font-medium text-primary mt-1 font-pt-serif'>Technology</span>
                 </h2>
 

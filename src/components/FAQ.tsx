@@ -43,7 +43,7 @@ export default function FAQ() {
 
                 {/* Left Side: Header */}
                 <div className="flex flex-col justify-center">
-                    <h2 className="font-outfit text-5xl md:text-7xl font-black text-primary leading-[0.9] uppercase tracking-tighter mb-8">
+                    <h2 className="font-outfit text-5xl md:text-7xl font-black text-primary leading-[0.9] uppercase mb-8">
                         FREQUENTLY<br />ASKED<br />
                         <span className="italic font-medium mt-1 font-pt-serif">QUESTIONS</span>
                     </h2>

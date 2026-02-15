@@ -43,7 +43,7 @@ export default function AboutValues() {
                 <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
                     {/* Left: Sticky Impact Heading */}
                     <div className="lg:sticky lg:top-32">
-                        <h2 className="font-outfit text-5xl md:text-8xl font-black text-black uppercase leading-[0.85] tracking-tighter mb-8">
+                        <h2 className="font-outfit text-5xl md:text-8xl font-black text-black uppercase leading-[0.85] mb-8">
                             THE PILLARS <br />
                             <span className="italic font-light text-primary">OF PRABLO.</span>
                         </h2>

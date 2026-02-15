@@ -57,7 +57,7 @@ export default function ServicesPage() {
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-white text-5xl md:text-[90px] font-black uppercase leading-[0.85] tracking-tighter"
+                        className="text-white text-5xl md:text-[90px] font-black uppercase leading-[0.85]"
                     >
                         OUR <span className="italic font-light">CORE</span> <br />
                         EXPERTISE.
@@ -92,7 +92,7 @@ export default function ServicesPage() {
                             </div>
 
                             <div className="mt-12">
-                                <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter leading-none mb-6">
+                                <h3 className="text-3xl md:text-4xl font-black uppercase leading-none mb-6">
                                     {s.title}
                                 </h3>
                                 <p className={`text-sm md:text-base font-medium leading-relaxed ${s.color.includes('primary') ? 'text-white/80' : 'text-gray-500'
@@ -111,7 +111,7 @@ export default function ServicesPage() {
                 <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[120px] -mb-32 -mr-32" />
 
                 <div className="max-w-[1400px] mx-auto relative z-10">
-                    <h2 className="text-black text-5xl md:text-8xl font-black uppercase mb-20 tracking-tighter leading-[0.85]">
+                    <h2 className="text-black text-5xl md:text-8xl font-black uppercase mb-20 leading-[0.85]">
                         HOW WE <br />
                         <span className="text-primary italic font-light">ENGINEER IMPACT.</span>
                     </h2>
@@ -137,7 +137,7 @@ export default function ServicesPage() {
 
             {/* 4. Mini CTA for Services */}
             <section className="py-24 px-[5%] text-center bg-white">
-                <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8">
+                <h3 className="text-4xl md:text-6xl font-black uppercase mb-8">
                     READY TO <span className="text-primary">DOMINATE?</span>
                 </h3>
                 <button className="bg-primary text-white px-12 py-5 rounded-md font-black text-xs uppercase tracking-widest hover:bg-black transition-all shadow-2xl">

@@ -29,7 +29,7 @@ export default function LogoTicker() {
         <section className="py-12 md:py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4 text-center mb-20">
                 {/* Updated Typography to match image_970eee.png */}
-                <h2 className="font-outfit text-primary text-4xl md:text-6xl font-black uppercase leading-[1] tracking-tighter flex flex-col items-center">
+                <h2 className="font-outfit text-primary text-4xl md:text-6xl font-black uppercase leading-[1] flex flex-col items-center">
                     <span>TRUSTED BY BRANDS</span>
                     <span>That Demand</span>
                     <span className="italic font-medium mt-1 font-pt-serif">Results</span>
