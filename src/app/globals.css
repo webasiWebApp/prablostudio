@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-black font-dm-sans antialiased overflow-x-hidden;
+    @apply bg-white text-black font-poppins antialiased overflow-x-hidden;
   }
 
   /* Centralized Heading Fonts Configuration (Bebas Neue, Normal Spacing) */

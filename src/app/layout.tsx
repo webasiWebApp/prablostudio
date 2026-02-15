@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${outfit.variable} ${dmSans.variable} ${ptSerif.variable} ${poppins.variable} ${bebas.variable} font-dm-sans`}>
+            <body className={`${outfit.variable} ${dmSans.variable} ${ptSerif.variable} ${poppins.variable} ${bebas.variable} font-poppins`}>
                 {/* We move Navbar, Footer, and Logic into this new component */}
                 <LayoutContent>
                     {children}
