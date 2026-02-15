@@ -1,8 +1,43 @@
 "use client";
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react';
+import { useState } from 'react';
 
 export default function ContactPage() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus('loading');
+
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (res.ok) {
+                setStatus('success');
+                setFormData({ name: '', email: '', subject: '', message: '' });
+            } else {
+                setStatus('error');
+            }
+        } catch (error) {
+            setStatus('error');
+        }
+    };
+
     return (
         <main className="bg-white min-h-screen">
             {/* 1. Contact Hero Section */}
@@ -68,22 +103,64 @@ export default function ContactPage() {
                         viewport={{ once: true }}
                         className="bg-[#FFF8F0] p-8 md:p-12 rounded-3xl border border-orange-100 shadow-xl"
                     >
-                        <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+                        <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
                             <div className="grid md:grid-cols-2 gap-6">
-                                <InputField label="Full Name" placeholder="John Doe" />
-                                <InputField label="Email Address" placeholder="john@example.com" />
+                                <InputField
+                                    name="name"
+                                    label="Full Name"
+                                    placeholder="John Doe"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                />
+                                <InputField
+                                    name="email"
+                                    label="Email Address"
+                                    placeholder="john@example.com"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                />
                             </div>
-                            <InputField label="Subject" placeholder="Project Inquiry" />
+                            <InputField
+                                name="subject"
+                                label="Subject"
+                                placeholder="Project Inquiry"
+                                value={formData.subject}
+                                onChange={handleChange}
+                            />
                             <div className="flex flex-col gap-2">
                                 <label className="text-[10px] font-black uppercase tracking-widest text-primary ml-1">Message</label>
                                 <textarea
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    required
                                     className="bg-white border border-orange-50 rounded-xl p-4 min-h-[150px] outline-none focus:border-primary transition-colors text-sm font-medium"
                                     placeholder="Tell us about your brand..."
                                 />
                             </div>
-                            <button className="bg-primary text-white py-5 rounded-xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-black transition-all shadow-xl mt-4">
-                                Send Message <Send size={14} />
+
+                            <button
+                                type="submit"
+                                disabled={status === 'loading'}
+                                className="bg-primary text-white py-5 rounded-xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-black transition-all shadow-xl mt-4 disabled:opacity-70 disabled:cursor-not-allowed"
+                            >
+                                {status === 'loading' ? (
+                                    <>Sending... <Loader2 size={14} className="animate-spin" /></>
+                                ) : (
+                                    <>Send Message <Send size={14} /></>
+                                )}
                             </button>
+
+                            {status === 'success' && (
+                                <p className="text-green-600 text-xs font-bold text-center mt-2 uppercase tracking-wide">
+                                    Message Sent Successfully!
+                                </p>
+                            )}
+                            {status === 'error' && (
+                                <p className="text-red-600 text-xs font-bold text-center mt-2 uppercase tracking-wide">
+                                    Something went wrong. Please try again.
+                                </p>
+                            )}
                         </form>
                     </motion.div>
 
@@ -107,12 +184,16 @@ function ContactDetail({ icon, title, content }: { icon: any, title: string, con
     );
 }
 
-function InputField({ label, placeholder }: { label: string, placeholder: string }) {
+function InputField({ label, placeholder, name, value, onChange }: { label: string, placeholder: string, name: string, value: string, onChange: (e: React.ChangeEvent<HTMLInputElement>) => void }) {
     return (
         <div className="flex flex-col gap-2">
             <label className="text-[10px] font-black uppercase tracking-widest text-primary ml-1">{label}</label>
             <input
                 type="text"
+                name={name}
+                value={value}
+                onChange={onChange}
+                required
                 className="bg-white border border-orange-50 rounded-xl px-4 py-4 outline-none focus:border-primary transition-colors text-sm font-medium"
                 placeholder={placeholder}
             />

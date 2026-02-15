@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import AboutValues from "../../components/AboutValues"; // The masonry section we built
 import Team from "../../components/Team"; // Team section
@@ -36,11 +37,23 @@ export default function AboutPage() {
                     </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
-                    <div className="h-64 bg-orange-50 rounded-2xl flex items-center justify-center p-8 text-center border border-orange-100">
-                        <p className="text-primary font-black text-xl uppercase leading-tight">Creativity First</p>
+                    <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg group">
+                        <Image
+                            src="/AboutImg/abi1.jpg"
+                            alt="Creativity First"
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                        
                     </div>
-                    <div className="h-64 bg-primary rounded-2xl flex items-center justify-center p-8 text-center shadow-xl translate-y-8">
-                        <p className="text-white font-black text-xl uppercase leading-tight">AI Driven</p>
+                    <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg group translate-y-12">
+                        <Image
+                            src="/AboutImg/abi2.jpg"
+                            alt="AI Driven"
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                        
                     </div>
                 </div>
             </section>

@@ -31,7 +31,7 @@ const services = [
         id: "04",
         title: "Performance Marketing",
         desc: "Data-driven campaigns focused on ROI, conversion, and aggressive growth scaling across all platforms.",
-        icon: <BarChart3 size={32} className="text-white" />,
+        icon: <BarChart3 size={32} className="text-primary" />,
         size: "lg",
         color: "bg-primary text-white"
     }

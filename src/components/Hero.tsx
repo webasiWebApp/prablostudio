@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useMotionValue, useSpring, animate } from "framer-motion";
 import Balatro from "./Balatro";
@@ -63,9 +64,11 @@ export default function Hero() {
                         Combine Artificial Intelligence With Cinematic Storytelling To Build Brands That Dominate The
                         Market
                     </p>
-                    <button className="bg-white text-primary px-10 py-4 rounded-sm font-bold text-xs uppercase hover:bg-black hover:text-white transition-all shadow-lg">
-                        View Our Work
-                    </button>
+                    <Link href="/portfolio">
+                        <button className="bg-white text-primary px-10 py-4 rounded-sm font-bold text-xs uppercase hover:bg-black hover:text-white transition-all shadow-lg">
+                            View Our Work
+                        </button>
+                    </Link>
                 </div>
             </div>
 

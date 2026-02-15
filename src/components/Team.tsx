@@ -46,12 +46,7 @@ export default function Team() {
                                 <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400 font-bold uppercase tracking-widest">
                                     Photo Pending
                                 </div>
-                                {/* Hover Overlay */}
-                                <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                    <span className="text-white font-black uppercase tracking-widest border border-white/30 px-6 py-2 rounded-full">
-                                        View Profile
-                                    </span>
-                                </div>
+                                
                             </div>
 
                             {/* Info */}
