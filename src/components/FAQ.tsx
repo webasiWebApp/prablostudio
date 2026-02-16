@@ -43,9 +43,9 @@ export default function FAQ() {
 
                 {/* Left Side: Header */}
                 <div className="flex flex-col justify-center">
-                    <h2 className="font-outfit text-5xl md:text-7xl font-black text-primary leading-[0.9] uppercase mb-8">
+                    <h2 className="font-poppins text-5xl md:text-7xl font-bold text-primary leading-[0.8] uppercase mb-8">
                         FREQUENTLY<br />ASKED<br />
-                        <span className="font-medium mt-1 font-pt-serif">QUESTIONS</span>
+                        <span className="font-normal mt-1">QUESTIONS</span>
                     </h2>
                     <p className="text-gray-400 text-sm md:text-base max-w-sm leading-relaxed">
                         Have questions? We have answers. Everything you need to know about growing your brand with Prablo360.

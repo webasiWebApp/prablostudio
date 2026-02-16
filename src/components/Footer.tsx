@@ -10,8 +10,8 @@ export default function Footer() {
             <div className="bg-[url('/bg2.png')] bg-cover bg-center bg-no-repeat p-12 md:p-20 rounded-xl text-white text-center mb-20 shadow-lg w-[90%] max-w-[1400px] mx-auto relative overflow-hidden">
 
                 <div className="relative z-10">
-                    <h2 className="font-outfit text-4xl md:text-7xl font-normal mb-4 uppercase leading-none">
-                        READY TO UPGRADE <br /> YOUR <span className="font-medium mt-1 font-pt-serif">BRAND?</span>
+                    <h2 className="font-poppins text-4xl md:text-7xl font-bold mb-4 uppercase leading-none">
+                        READY TO UPGRADE <br /> YOUR <span className="font-normal mt-1">BRAND?</span>
                     </h2>
                     <p className="mb-8 text-sm md:text-base opacity-90 font-medium">
                         Step Into The Future Of Marketing With Prablo360.

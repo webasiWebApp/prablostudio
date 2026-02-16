@@ -17,8 +17,8 @@ export default function AgencyInfo() {
     return (
         <section className="py-16 md:py-32 px-[5%] bg-white flex flex-col lg:flex-row items-center gap-16 overflow-hidden">
             <div className="flex-1">
-                <h2 className="font-outfit text-[40px] md:text-5xl lg:text-7xl font-black text-primary mb-12 uppercase leading-[1.1]">
-                    Tradition<br />Meets<br /> <span className='font-medium text-primary mt-1 font-pt-serif'>Technology</span>
+                <h2 className="font-poppins text-[40px] md:text-5xl lg:text-7xl text-primary mb-12 leading-[0.8]">
+                    <span className="font-bold">Tradition</span><br /><span className="font-bold">Meets</span><br /> <span className='font-normal text-primary mt-1'>Technology</span>
                 </h2>
 
                 {/* List items with focus/gray-out effect */}
@@ -35,7 +35,7 @@ export default function AgencyInfo() {
                         >
                             <span className=" text-4xl md:text-7xl font-light text-gray-300">{item.id}</span>
                             <div>
-                                <h4 className="text-xl md:text-3xl font-light uppercase">{item.title}</h4>
+                                <h4 className="text-xl md:text-3xl font-semibold uppercase">{item.title}</h4>
                                 <p className="text-gray-500 font-light text-sm md:text-md max-w-sm">{item.desc}</p>
                             </div>
                         </div>

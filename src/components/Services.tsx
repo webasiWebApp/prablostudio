@@ -62,17 +62,17 @@ export default function Services() {
 
     return (
         <section ref={containerRef} className="relative h-[250vh] bg-primary">
-            <div className="sticky top-0 h-[100dvh] flex flex-col justify-start md:justify-center px-[5%] overflow-hidden pt-28 md:pt-0">
+            <div className="sticky top-0 h-[100dvh] flex flex-col justify-start md:justify-center px-[5%] overflow-hidden pt-28">
                 <div className="grid lg:grid-cols-[1fr_2fr] gap-6 lg:gap-24 w-full max-w-[1400px] mx-auto items-center">
 
                     {/* Left Side: Header */}
                     <div className="flex flex-col gap-2">
-                        <h2 className="text-white text-5xl md:text-5xl lg:text-[80px] font-normal leading-[0.85] uppercase">
-                            OUR EXPERTISE<br />
-                            <span className="font-medium mt-1 font-pt-serif">IN ACTION</span>
+                        <h2 className="text-white text-5xl md:text-5xl lg:text-[80px] font-poppins font-bold leading-[0.75]">
+                            Our Expertise<br />
+                            <span className="font-bold mt-1">In Action</span>
                         </h2>
-                        <h3 className="text-white text-xl md:text-2xl font-light mt-4 mb-2">
-                            Blending AI Technology With Creative Brilliance.
+                        <h3 className="text-white text-xl md:text-2xl font-poppins font-normal mt-4 mb-2 leading-tight">
+                            Blending Ai Technology With Creative Brilliance.
                         </h3>
                         <p className="text-white/90 text-xs md:text-sm font-light max-w-xl leading-relaxed mb-6">
                             We don't just execute campaigns; we engineer digital dominance. By fusing data-driven AI insights with high-end cinematic storytelling, we turn passive audiences into loyal advocates and transform brands into market leaders.
