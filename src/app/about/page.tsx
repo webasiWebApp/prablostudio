@@ -20,8 +20,9 @@ export default function AboutPage() {
                         className="text-white text-5xl md:text-[100px] font-poppins font-bold uppercase leading-[0.85]"
                     >
                         WE ARE THE <br />
-                        <span className="font-normal opacity-90">REBELS OF</span> <br />
-                        MARKETING.
+                        <span className="font-bold opacity-90">REBELS OF</span> <br />
+                        <span className="font-normal opacity-90">MARKETING</span>
+
                     </motion.h1>
                 </div>
             </section>

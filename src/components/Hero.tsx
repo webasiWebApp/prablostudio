@@ -54,13 +54,13 @@ export default function Hero() {
                     />
                 </div>
                 <div className="z-10 relative flex flex-col items-center max-w-5xl mx-auto pt-20">
-                    <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-poppins font-black leading-[0.2] mb-8">
+                    <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight mb-8">
                         BEYOND MARKETING.<br />
                         WE ARE THE <span className="font-light">FUTURE</span><br />
                         OF DIGITAL IMPACT.
                     </h1>
-                    <p className="text-white/90 text-xs md:text-lg font-light max-w-3xl mx-auto leading-tight mb-10">
-                        Prablo360 Is Sri Lanka's First <span className="font-normal">AI-Powered</span> Digital Agency Fused With A High-End Creative Studio. We
+                    <p className="text-white/90 text-xs md:text-lg font-poppins font-normal max-w-3xl mx-auto leading-relaxed mb-10">
+                        Prablo360 Is Sri Lanka's First <span className="font-semibold">AI-Powered</span> Digital Agency Fused With A High-End Creative Studio. We
                         Combine Artificial Intelligence With Cinematic Storytelling To Build Brands That Dominate The
                         Market
                     </p>
