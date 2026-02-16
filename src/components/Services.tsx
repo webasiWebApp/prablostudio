@@ -67,7 +67,7 @@ export default function Services() {
 
                     {/* Left Side: Header */}
                     <div className="flex flex-col gap-2">
-                        <h2 className="text-white text-5xl md:text-5xl lg:text-[80px] font-poppins font-bold leading-[0.75]">
+                        <h2 className="text-white text-5xl md:text-5xl lg:text-[80px] font-poppins font-bold leading-[0.5]">
                             Our Expertise<br />
                             <span className="font-bold mt-1">In Action</span>
                         </h2>
