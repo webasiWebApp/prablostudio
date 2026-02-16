@@ -31,7 +31,7 @@ export default function LogoTicker() {
                 {/* Updated Typography to match image_970eee.png */}
                 <h2 className="font-poppins text-primary text-4xl md:text-6xl font-black leading-[0.8] flex flex-col items-center">
                     <span className="font-bold">Trusted by Brands</span>
-                    <span className="font-normal">That Demand</span>
+                    <span className="font-bold">That Demand</span>
                     <span className="font-normal mt-1">Results</span>
                 </h2>
             </div>
