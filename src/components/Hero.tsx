@@ -56,7 +56,7 @@ export default function Hero() {
                 <div className="z-10 relative flex flex-col items-center max-w-5xl mx-auto pt-20">
                     <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight mb-8">
                         BEYOND MARKETING.<br />
-                        WE ARE THE <span className="font-light">FUTURE</span><br />
+                        WE ARE THE <span className="">FUTURE</span><br />
                         OF DIGITAL IMPACT.
                     </h1>
                     <p className="text-white/90 text-xs md:text-lg font-poppins font-normal max-w-3xl mx-auto leading-relaxed mb-10">
