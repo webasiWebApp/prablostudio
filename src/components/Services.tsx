@@ -105,7 +105,7 @@ export default function Services() {
                                                 {item.id}
                                             </span>
                                         </div>
-                                        <h3 className="text-white font-thin text-[13px] md:text-xs uppercase max-w-[200px] leading-tight">
+                                        <h3 className="text-white font-semibold font-poppins text-[13px] md:text-xs uppercase max-w-[200px] leading-tight">
                                             {item.title}
                                         </h3>
                                     </div>
@@ -134,7 +134,7 @@ export default function Services() {
 
                                     {/* Content that appears on hover */}
                                     <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-4 group-hover:translate-y-0">
-                                        <h3 className="text-white font-normal text-xl md:text-2xl uppercase mb-4 tracking-wider">
+                                        <h3 className="text-white font-semibold font-poppins text-xl md:text-2xl uppercase mb-4 tracking-wider">
                                             {item.title}
                                         </h3>
                                         <p className="text-white/90 text-sm md:text-base font-light leading-relaxed">

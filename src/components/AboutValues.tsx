@@ -43,11 +43,11 @@ export default function AboutValues() {
                 <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
                     {/* Left: Sticky Impact Heading */}
                     <div className="lg:sticky lg:top-32">
-                        <h2 className="font-outfit text-5xl md:text-8xl font-normal text-black uppercase leading-[0.85] mb-8">
+                        <h2 className="font-outfit text-5xl md:text-8xl font-bold font-poppins text-black uppercase leading-[0.85] mb-8">
                             THE PILLARS <br />
                             <span className="font-light text-primary">OF PRABLO.</span>
                         </h2>
-                        <p className="text-gray-600 text-lg font-medium max-w-md leading-relaxed">
+                        <p className="text-gray-600 text-lg font-normal font-poppins max-w-md leading-relaxed">
                             We operate at the intersection of logic and magic, ensuring every digital touchpoint is engineered for maximum conversion.
                         </p>
                     </div>
@@ -76,10 +76,10 @@ export default function AboutValues() {
                                 </div>
 
                                 <div className="mt-auto">
-                                    <h3 className="text-2xl font-normal text-black uppercase tracking-tight mb-3">
+                                    <h3 className="text-2xl font-semibold font-poppins text-black uppercase tracking-tight mb-3">
                                         {pillar.title}
                                     </h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed font-medium">
+                                    <p className="text-gray-500 text-sm leading-relaxed font-normal font-poppins">
                                         {pillar.desc}
                                     </p>
                                 </div>

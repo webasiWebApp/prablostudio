@@ -50,7 +50,7 @@ export default function ContactPage() {
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-white text-6xl md:text-[110px] font-normal uppercase leading-[0.8]"
+                        className="text-white text-6xl md:text-[110px] font-bold font-poppins uppercase leading-[0.8]"
                     >
                         LET'S START <br />
                         <span className="font-light text-white/90">A PROJECT.</span>
@@ -64,7 +64,7 @@ export default function ContactPage() {
 
                     {/* Left Side: Contact Info & Address */}
                     <div className="flex flex-col justify-center">
-                        <h2 className="text-black text-5xl font-normal uppercase mb-8 leading-none">
+                        <h2 className="text-black text-5xl font-semibold font-poppins uppercase mb-8 leading-none">
                             OFFICE IN <br />
                             <span className="text-primary font-light">COLOMBO.</span>
                         </h2>
