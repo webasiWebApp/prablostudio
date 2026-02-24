@@ -46,7 +46,7 @@ export default function ContactPage() {
                     className="absolute inset-0 opacity-20 bg-cover bg-center"
                     style={{ backgroundImage: "url('/hero-bg.jpg')" }}
                 />
-                <div className="relative z-10 text-center px-[5%]">
+                <div className="relative z-10 text-center px-[5%] pt-20">
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -65,8 +65,7 @@ export default function ContactPage() {
                     {/* Left Side: Contact Info & Address */}
                     <div className="flex flex-col justify-center">
                         <h2 className="text-black text-5xl font-semibold font-poppins uppercase mb-8 leading-none">
-                            OFFICE IN <br />
-                            <span className="text-primary font-light">COLOMBO.</span>
+                            Prablo<span className="text-primary font-semibold">360</span> Is a <br /><span className="text-primary font-semibold">Fully Remote Company.</span>
                         </h2>
 
                         <div className="space-y-10 mt-8">
