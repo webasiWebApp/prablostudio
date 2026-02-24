@@ -22,11 +22,11 @@ export default function Team() {
         <section className="py-24 px-[5%] bg-white">
             <div className="max-w-[1400px] mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-black text-5xl md:text-7xl font-normal uppercase leading-[0.85] mb-6">
+                    <h2 className="text-black text-5xl md:text-7xl font-bold font-poppins uppercase leading-[0.85] mb-6">
                         MEET THE <br />
                         <span className="text-primary font-light">MINDS.</span>
                     </h2>
-                    <p className="text-gray-500 text-lg font-medium max-w-2xl mx-auto">
+                    <p className="text-gray-500 text-lg font-normal font-poppins max-w-2xl mx-auto">
                         A collective of visionaries, creators, and strategists dedicated to redefining your digital presence.
                     </p>
                 </div>
@@ -51,7 +51,7 @@ export default function Team() {
 
                             {/* Info */}
                             <div className="text-center group-hover:-translate-y-2 transition-transform duration-300">
-                                <h3 className="text-black text-xl font-normal uppercase leading-tight mb-1">
+                                <h3 className="text-black text-xl font-normal font-poppins uppercase leading-tight mb-1">
                                     {member.name}
                                 </h3>
                                 <p className="text-primary text-xs font-normal uppercase tracking-widest">

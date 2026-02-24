@@ -35,7 +35,7 @@ export default function AgencyInfo() {
                         >
                             <span className=" text-4xl md:text-7xl font-light text-gray-300">{item.id}</span>
                             <div>
-                                <h4 className="text-xl md:text-3xl font-semibold uppercase">{item.title}</h4>
+                                <h4 className="text-xl md:text-3xl font-semibold font-poppins uppercase">{item.title}</h4>
                                 <p className="text-gray-500 font-light text-sm md:text-md max-w-sm">{item.desc}</p>
                             </div>
                         </div>

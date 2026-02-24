@@ -45,7 +45,7 @@ export default function PortfolioPage() {
                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="inline-block px-4 py-1 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-white text-[10px] font-normal uppercase tracking-[0.3em] mb-6">
                         Showcasing Excellence
                     </motion.div>
-                    <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-white text-6xl md:text-[110px] font-normal uppercase leading-[0.8]">
+                    <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-white text-6xl md:text-[110px] font-bold font-poppins uppercase leading-[0.8]">
                         SELECTED <br />
                         <span className="font-light text-white/90">PROJECT.</span>
                     </motion.h1>

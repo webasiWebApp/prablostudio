@@ -50,7 +50,7 @@ export default function Footer() {
 
                 {/* Company Links */}
                 <div className="flex flex-col gap-6">
-                    <h4 className="text-primary font-normal uppercase text-2xl">Company</h4>
+                    <h4 className="text-primary font-semibold font-poppins uppercase text-2xl">Company</h4>
                     <ul className="space-y-3">
                         {['Home', 'About', 'Service', 'Portfolio', 'Contact'].map(link => (
                             <li key={link} className="text-black font-medium text-md cursor-pointer hover:text-primary transition-colors">{link}</li>
@@ -60,7 +60,7 @@ export default function Footer() {
 
                 {/* Service Links */}
                 <div className="flex flex-col gap-6">
-                    <h4 className="text-primary font-normal uppercase  text-2xl">Service</h4>
+                    <h4 className="text-primary font-semibold font-poppins uppercase  text-2xl">Service</h4>
                     <ul className="space-y-3">
                         {[
                             'Social Media Management',
@@ -76,7 +76,7 @@ export default function Footer() {
 
                 {/* Address Info */}
                 <div className="flex flex-col gap-6">
-                    <h4 className="text-primary font-normal uppercase text-2xl">Address</h4>
+                    <h4 className="text-primary font-semibold font-poppins uppercase text-2xl">Address</h4>
                     <div className="flex flex-col gap-2 text-md font-medium text-black">
                         <p>No 4/A, Samagipura, Dandeniya,<br />Rathmale, Matara</p>
                         <p>
