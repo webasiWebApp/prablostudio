@@ -49,6 +49,14 @@ export default {
             options: { hotspot: true },
         },
         {
+            name: 'videoFile',
+            title: 'Project Video',
+            type: 'file',
+            options: {
+                accept: 'video/*'
+            }
+        },
+        {
             name: 'year',
             title: 'Release Year',
             type: 'string',
