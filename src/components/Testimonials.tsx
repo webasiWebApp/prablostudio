@@ -3,34 +3,54 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
     {
-        quote: "I've Tried Countless Tea Brands, But Nothing Compares To The Freshness And Aroma Of This One. Every Sip Feels Like A Warm Hug! My Mornings Are Incomplete Without It.",
-        name: "Olivia Richardson",
-        location: "New York, USA",
+        quote: "Our social media engagement completely transformed within weeks. The creative direction for our salon's visuals is absolutely premium and brought in so many new bookings!",
+        name: "Salon Trim",
+        location: "Salon & Wellness",
     },
     {
-        quote: "Prablo360 transformed our digital presence completely. Their AI-driven approach gave us insights we never knew we needed.",
-        name: "James Anderson",
-        location: "London, UK",
+        quote: "Highly professional team. They built an amazing online presence for our institute and streamlined our student registration process seamlessly. Highly recommended!",
+        name: "Minami Japanese Language School",
+        location: "Education",
     },
     {
-        quote: "The creativity and technical expertise this team brings to the table is unmatched. Truly the future of digital marketing.",
-        name: "Sarah Jenkins",
-        location: "Sydney, Australia",
+        quote: "Excellent digital strategies and execution. They deeply understood our B2B requirements and delivered outstanding marketing results that scaled our reach.",
+        name: "Onmo Lanka BDS",
+        location: "B2B Solutions",
     },
     {
-        quote: "From the branding to the website, everything was executed to perfection. Highly recommend their services!",
-        name: "Michael Chen",
-        location: "Singapore",
+        quote: "Brilliant creative collaboration across borders. The attention to detail, cinematic quality, and smooth communication made our project an absolute success.",
+        name: "Roofilmz Australia",
+        location: "Media Production",
     },
     {
-        quote: "Working with Prablo360 was a game-changer for our startup. We saw a 200% increase in leads within 3 months.",
-        name: "Emily Davis",
-        location: "Toronto, Canada",
+        quote: "The product reels and social media grid layouts they designed are stunning. We saw a noticeable jump in our online inquiries and accessory sales!",
+        name: "Eesha Accessories",
+        location: "E-Commerce",
     },
     {
-        quote: "The best agency we've worked with. Professional, innovative, and results-oriented.",
-        name: "David Wilson",
-        location: "Dubai, UAE",
+        quote: "They successfully brought our traditional tailoring brand into the digital space. The new premium look perfectly showcases our craftsmanship to modern clients.",
+        name: "Ranjith Custom Tailors",
+        location: "Fashion & Retail",
+    },
+    {
+        quote: "Extremely talented team that perfectly captured my personal brand's essence. The aesthetic is clean, elegant, and exactly what I was looking for.",
+        name: "Nilupama Asanganee",
+        location: "Personal Brand",
+    },
+    {
+        quote: "Exceptional video editing work! They turned our raw travel footage into highly engaging, cinematic masterpieces with incredibly fast turnaround times.",
+        name: "Tripit Holidays",
+        location: "Video Editing",
+    },
+    {
+        quote: "Powerful marketing campaigns that drove massive local awareness and foot traffic to our store. Reliable, data-driven, and very easy to work with.",
+        name: "Super City",
+        location: "Retail",
+    },
+    {
+        quote: "Our sales increased by 30% in just one year! Their unique ideas and deep knowledge of market trends perfectly target the right audience. Highly recommended for businesses at any stage.",
+        name: "Cy International",
+        location: "Business Growth",
     },
 ];
 

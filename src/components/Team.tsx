@@ -5,13 +5,13 @@ import Image from "next/image";
 const teamMembers = [
     { name: "Sandakelum Prabhashwara", role: "Founder & CEO" },
     { name: "Lehara Rukshani", role: "General Manager" },
-    { name: "Benajith Tesali", role: "Operation Manager" },
-    { name: "Rumesh Bandara", role: "Director of Global Operations" },
-    { name: "Radya Liyanarachchi", role: "Director of Digital Strategy" },
-    { name: "Lakshan Manuranga", role: "Strategic Media Director" },
-    { name: "Naveen Buddhika", role: "Head of Brand Identity & Design" },
-    { name: "Ishan Sangeeth", role: "Head of Video Production" },
-    { name: "Mumtaz Ameer", role: "Lead Creative Content Creator" },
+    { name: "Benajith Tesali", role: "Operation Manager", image: "/team/Benajith tesali.jpeg" },
+    { name: "Rumesh Bandara", role: "Director of Global Operations", image: "/team/Rumesh bandara.jpeg" },
+    { name: "Radya Liyanarachchi", role: "Director of Digital Strategy", image: "/team/Radya liyanarachchi.jpeg" },
+    { name: "Lakshan Manuranga", role: "Strategic Media Director", image: "/team/Lakshan manuranga.jpeg" },
+    { name: "Naveen Buddhika", role: "Head of Brand Identity & Design", image: "/team/Naveen buddika.jpeg" },
+    { name: "Ishan Sangeeth", role: "Head of Video Production", image: "/team/Ishan sangeeth.jpeg" },
+    { name: "Radya Liyanarachchi", role: "Lead Creative Content Creator", image: "/team/Radya liyanarachchi.jpeg" },
     { name: "Praveen Maleesha", role: "Lead Web Developer" },
     { name: "Pathum Akalanka", role: "Senior Visual Designer" },
     { name: "Anuhas Jayasooriya", role: "Brand Designer" },
@@ -43,10 +43,19 @@ export default function Team() {
                         >
                             {/* Image Placeholder */}
                             <div className="relative w-full aspect-[3/4] bg-gray-100 rounded-2xl overflow-hidden mb-6 border border-gray-100 group-hover:shadow-xl transition-all duration-500">
-                                <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400 font-normal uppercase tracking-widest">
-                                    Photo Pending
-                                </div>
-
+                                {member.image ? (
+                                    <Image
+                                        src={member.image}
+                                        alt={member.name}
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                                    />
+                                ) : (
+                                    <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400 font-normal uppercase tracking-widest">
+                                        Photo Pending
+                                    </div>
+                                )}
                             </div>
 
                             {/* Info */}

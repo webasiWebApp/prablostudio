@@ -22,7 +22,7 @@ const bebas = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-    title: "Prablo Studio | Beyond Marketing",
+    title: "Prablo 360 | Beyond Marketing",
     description: "We are the future of digital impact.",
     icons: {
         icon: "/logo.ico",

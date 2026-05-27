@@ -92,7 +92,7 @@ export default function Footer() {
             {/* 3. Copyright Bar */}
             <div className="pt-8 border-gray-100 flex justify-center">
                 <p className="text-white bg-primary w-full py-4 text-center rounded-sm font-medium text-xs uppercase">
-                    Copyright © 2026 Prablo360. All Rights Reserved. <span className="mx-2">|</span> Designed & Developed by <a href="https://webasi.co">WEBASI</a>
+                    Copyright © 2026 Prablo360. All Rights Reserved. <span className="mx-2">|</span> Designed & Developed by <a href="https://prablo360.com">Prablo Team</a>
                 </p>
             </div>
         </footer>
