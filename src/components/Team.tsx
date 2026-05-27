@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const teamMembers = [
-    { name: "Sandakelum Prabhashwara", role: "Founder & CEO" },
-    { name: "Lehara Rukshani", role: "General Manager" },
+    { name: "Sandakelum Prabhashwara", role: "Founder & CEO", image: "/team/sandakelum prabhashwara.jpeg" },
+    { name: "Lehara Rukshani", role: "General Manager", image: "/team/Lehara Rukshani.jpeg" },
     { name: "Benajith Tesali", role: "Operation Manager", image: "/team/Benajith tesali.jpeg" },
     { name: "Rumesh Bandara", role: "Director of Global Operations", image: "/team/Rumesh bandara.jpeg" },
     { name: "Radya Liyanarachchi", role: "Director of Digital Strategy", image: "/team/Radya liyanarachchi.jpeg" },
@@ -13,8 +13,8 @@ const teamMembers = [
     { name: "Ishan Sangeeth", role: "Head of Video Production", image: "/team/Ishan sangeeth.jpeg" },
     { name: "Radya Liyanarachchi", role: "Lead Creative Content Creator", image: "/team/Radya liyanarachchi.jpeg" },
     { name: "Praveen Maleesha", role: "Lead Web Developer" },
-    { name: "Pathum Akalanka", role: "Senior Visual Designer" },
-    { name: "Anuhas Jayasooriya", role: "Brand Designer" },
+    { name: "Pathum Akalanka", role: "Senior Visual Designer", image: "/team/Pathum Akalanka.jpeg" },
+    { name: "Anuhas Jayasooriya", role: "Brand Designer", image: "/team/Anuhas jayasooriya.jpeg" },
 ];
 
 export default function Team() {

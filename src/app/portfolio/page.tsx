@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 
-const categories = ["All", "Cinematic", "AI Solutions", "Branding"];
+const categories = ["All", "Designing Content", "Video Content", "AI Content", "Cinematography"];
 
 export default function PortfolioPage() {
     const [filter, setFilter] = useState("All");
@@ -23,6 +23,7 @@ export default function PortfolioPage() {
                 category,
                 size,
                 mainImage,
+                videoUrl,
                 year
             }`;
             const data = await client.fetch(query);
@@ -104,7 +105,16 @@ function ProjectCard({ project }: { project: any }) {
                 className="relative break-inside-avoid group cursor-pointer overflow-hidden rounded-3xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500"
             >
                 <div className={`w-full overflow-hidden transition-all duration-700 ${heightClass}`}>
-                    {project.mainImage && (
+                    {project.videoUrl ? (
+                        <video
+                            src={project.videoUrl}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                    ) : project.mainImage && (
                         <img
                             src={urlFor(project.mainImage).width(800).url()}
                             alt={project.title}
