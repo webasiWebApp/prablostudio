@@ -24,9 +24,10 @@ export default {
             type: 'string',
             options: {
                 list: [
-                    { title: 'Cinematic', value: 'Cinematic' },
-                    { title: 'AI Solutions', value: 'AI Solutions' },
-                    { title: 'Branding', value: 'Branding' },
+                    { title: 'Designing Content', value: 'Designing Content' },
+                    { title: 'Video Content', value: 'Video Content' },
+                    { title: 'AI Content', value: 'AI Content' },
+                     { title: 'Cinematography', value: 'Cinematography' },
                 ],
             },
         },
