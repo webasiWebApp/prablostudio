@@ -23,10 +23,11 @@ export default function PortfolioPage() {
                 category,
                 size,
                 mainImage,
-                videoUrl,
+                "videoUrl": videoFile.asset->url,
                 year
             }`;
             const data = await client.fetch(query);
+            console.log("DEBUG - PORTFOLIO PROJECTS:", data);
             setProjects(data);
             setLoading(false);
         };
@@ -114,7 +115,7 @@ function ProjectCard({ project }: { project: any }) {
                             playsInline
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
-                    ) : project.mainImage && (
+                    ) : (project.mainImage && project.mainImage.asset) && (
                         <img
                             src={urlFor(project.mainImage).width(800).url()}
                             alt={project.title}
