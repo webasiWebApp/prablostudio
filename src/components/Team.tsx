@@ -11,8 +11,8 @@ const teamMembers = [
     { name: "Lakshan Manuranga", role: "Strategic Media Director", image: "/team/Lakshan manuranga.jpeg" },
     { name: "Naveen Buddhika", role: "Head of Brand Identity & Design", image: "/team/Naveen buddika.jpeg" },
     { name: "Ishan Sangeeth", role: "Head of Video Production", image: "/team/Ishan sangeeth.jpeg" },
-    { name: "Radya Liyanarachchi", role: "Lead Creative Content Creator", image: "/team/Radya liyanarachchi.jpeg" },
-    { name: "Praveen Maleesha", role: "Lead Web Developer" },
+    { name: "Givindi Gunasekara", role: "Lead Creative Content Creator", image: "/team/Givindi Gunasekara.jpeg" },
+    { name: "Praveen Maleesha", role: "Lead Web Developer", image: "/team/Praveen Maleesha.jpg" },
     { name: "Pathum Akalanka", role: "Senior Visual Designer", image: "/team/Pathum Akalanka.jpeg" },
     { name: "Anuhas Jayasooriya", role: "Brand Designer", image: "/team/Anuhas jayasooriya.jpeg" },
 ];
